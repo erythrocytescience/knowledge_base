@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inkscape on База знаний</title>
+    <link>http://localhost:1313/tags/inkscape/</link>
+    <description>Recent content in Inkscape on База знаний</description>
+    <generator>Hugo</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/inkscape/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Greek letter in Inkscape text</title>
+      <link>http://localhost:1313/inkscape_greek_letter/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/inkscape_greek_letter/</guid>
+      <description>To get the greek letter entered into Inkscape do the following:&#xA;Press F8 to get to text mode. Click with mouse on the canvas (Inkscape lingo for page) where you want your text. You will now have the text cursor on the canvas. Press Ctrl U to get into unicode entry mode. The status line at the bottom of the Inkscape window will now show &amp;ldquo;Unicode (enter to finish)&amp;rdquo;. Type 03bc which is the unicode for the µ character, then press Enter (Return), if everything went well you will now have the µ character on the canvas.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Приближенное Решение on База знаний</title>
+    <link>http://localhost:1313/tags/%D0%BF%D1%80%D0%B8%D0%B1%D0%BB%D0%B8%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5/</link>
+    <description>Recent content in Приближенное Решение on База знаний</description>
+    <generator>Hugo</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%D0%BF%D1%80%D0%B8%D0%B1%D0%BB%D0%B8%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Приток к горизонтальной скважине без ГРП</title>
+      <link>http://localhost:1313/mazo_formula_hw/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mazo_formula_hw/</guid>
+      <description>Приближенное решение задачи о притоке однофазной жидкости к ГС You can emphasize text using italic or bold styles.&#xA;Quotes Markdown allows you to include block quotes. Here&amp;rsquo;s an example:&#xA;&amp;ldquo;The only way to do great work is to love what you do.&amp;rdquo; - Steve Jobs&#xA;Images/Figures You can include images as figure in your posts. Here&amp;rsquo;s an example:&#xA;Emergence of Mandakini river from kedar peak&#xA;Tables Markdown supports tables. Here&amp;rsquo;s an example:</description>
+    </item>
+  </channel>
+</rss>

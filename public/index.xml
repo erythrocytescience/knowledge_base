@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Index on База знаний</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content in Index on База знаний</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>ru-ru</language>
+    <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Greek letter in Inkscape text</title>
+      <link>http://localhost:1313/inkscape_greek_letter/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/inkscape_greek_letter/</guid>
+      <description>To get the greek letter entered into Inkscape do the following:&#xA;Press F8 to get to text mode. Click with mouse on the canvas (Inkscape lingo for page) where you want your text. You will now have the text cursor on the canvas. Press Ctrl U to get into unicode entry mode. The status line at the bottom of the Inkscape window will now show &amp;ldquo;Unicode (enter to finish)&amp;rdquo;. Type 03bc which is the unicode for the µ character, then press Enter (Return), if everything went well you will now have the µ character on the canvas.</description>
+    </item>
+    <item>
+      <title>Приток к горизонтальной скважине без ГРП</title>
+      <link>http://localhost:1313/mazo_formula_hw/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mazo_formula_hw/</guid>
+      <description>Область решения задачи о притоке жидкости к горизонтальной скважине&#xA;Задаче о притоке однофазного флюида к ГС без МГРП. Пласт однородный $$\sigma = 1$$.&#xA;Приближенное решение задачи о притоке однофазной жидкости к ГС You can emphasize text using italic or bold styles.&#xA;Quotes Markdown allows you to include block quotes. Here&amp;rsquo;s an example:&#xA;&amp;ldquo;The only way to do great work is to love what you do.&amp;rdquo; - Steve Jobs&#xA;Images/Figures You can include images as figure in your posts.</description>
+    </item>
+    <item>
+      <title>html</title>
+      <link>http://localhost:1313/tags/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/html/</guid>
+      <description>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript. Wikipedia</description>
+    </item>
   </channel>
 </rss>
