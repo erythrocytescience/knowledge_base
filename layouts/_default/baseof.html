@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language }}">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body>
+    {{- partial "header.html" . -}}
+    <div class="main">{{- block "main" . }}{{- end }}</div>
+    {{- partial "footer.html" . -}}
+</body>
+{{ if .Param "math" }}
+{{ partialCached "math.html" . }}
+{{ end }}
+
+</html>

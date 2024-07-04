@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,8 +19,9 @@
     });
 </script>
 
-  </head>
-  <body><header>
+</head>
+
+<body><header>
   <h1>
     <a href="http://localhost:1313/">
       
@@ -64,7 +66,7 @@
       </td>
     </tr>
     <tr>
-      <td><a href="http://localhost:1313/mazo_formula_hw/">Приток к горизонтальной скважине без ГРП</a></td>
+      <td><a href="http://localhost:1313/mazo_formula_hw/">Упрощенная методика оценки эффективности МГРП</a></td>
       <td>
         <ul class="tagsList">
           <li><a href="http://localhost:1313/tags/%D0%BE%D0%B4%D0%BD%D0%BE%D1%84%D0%B0%D0%B7%D0%BA%D0%B0/">Однофазка</a></li>
@@ -85,4 +87,24 @@
     </div>
 </footer>
 </body>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+
+
+
+
 </html>

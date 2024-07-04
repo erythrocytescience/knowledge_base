@@ -16,11 +16,11 @@
       <description>To get the greek letter entered into Inkscape do the following:&#xA;Press F8 to get to text mode. Click with mouse on the canvas (Inkscape lingo for page) where you want your text. You will now have the text cursor on the canvas. Press Ctrl U to get into unicode entry mode. The status line at the bottom of the Inkscape window will now show &amp;ldquo;Unicode (enter to finish)&amp;rdquo;. Type 03bc which is the unicode for the µ character, then press Enter (Return), if everything went well you will now have the µ character on the canvas.</description>
     </item>
     <item>
-      <title>Приток к горизонтальной скважине без ГРП</title>
+      <title>Упрощенная методика оценки эффективности МГРП</title>
       <link>http://localhost:1313/mazo_formula_hw/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/mazo_formula_hw/</guid>
-      <description>Область решения задачи о притоке жидкости к горизонтальной скважине&#xA;Задаче о притоке однофазного флюида к ГС без МГРП. Пласт однородный $$\sigma = 1$$.&#xA;Приближенное решение задачи о притоке однофазной жидкости к ГС You can emphasize text using italic or bold styles.&#xA;Quotes Markdown allows you to include block quotes. Here&amp;rsquo;s an example:&#xA;&amp;ldquo;The only way to do great work is to love what you do.&amp;rdquo; - Steve Jobs&#xA;Images/Figures You can include images as figure in your posts.</description>
+      <description>1. Приток к горизонтальной скважине без ГРП Рис. 1. Область решения задачи о притоке жидкости к горизонтальной скважине&#xA;Задаче о притоке однофазного флюида к ГС без МГРП. Пласт однородный \( \sigma = 1 \). Падением давления вдоль ствола пренебрегаем. Задача сводится к двумерной в плоскости \(y=y_0 \in \left(0, L\right) \). Плоский характер течения нарушается, когда \(y_0\) приближается к концам \(y=0\) и \(y=L\). В силу симметри достаточно рассмотреть 1/4 поперечного сечения (рис.</description>
     </item>
     <item>
       <title>html</title>

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Приток к горизонтальной скважине без ГРП | База знаний</title>
+<title>Упрощенная методика оценки эффективности МГРП | База знаний</title>
 <meta name="robots" content='noindex, nofollow'>
 <meta name="description" content="">
 <meta name="generator" content="hugo-index">
@@ -16,8 +17,9 @@
     });
 </script>
 
-  </head>
-  <body><header>
+</head>
+
+<body><header>
   <h1>
     <a href="http://localhost:1313/">
       
@@ -25,7 +27,7 @@
     </a>
     <span class="hl">/</span>
     <a href="http://localhost:1313/mazo_formula_hw/">
-      <span>Приток к горизонтальной скважине без ГРП</span>
+      <span>Упрощенная методика оценки эффективности МГРП</span>
     </a>
   </h1>
   <p class="desc"></p>
@@ -44,29 +46,58 @@
   
 </ul>
 
-<div class="content"><!-- raw HTML omitted -->
+<div class="content"><h2 id="1-приток-к-горизонтальной-скважине-без-грп">1. Приток к горизонтальной скважине без ГРП</h2>
+<div style="text-align: justify;">
+<!-- ![Область решения задачи о притоке жидкости к горизонтальной скважине](mazo_formula_hw_domain.jpg) -->
 <figure><img src="/images/mazo_formula_hw_domain.png"
-    alt="Область решения задачи о притоке жидкости к горизонтальной скважине"><figcaption>
-      <p>Область решения задачи о притоке жидкости к горизонтальной скважине</p>
+    alt="Рис. 1. Область решения задачи о притоке жидкости к горизонтальной скважине"><figcaption>
+      <p>Рис. 1. Область решения задачи о притоке жидкости к горизонтальной скважине</p>
     </figcaption>
 </figure>
 
-<p>Задаче о притоке однофазного флюида к ГС без МГРП. Пласт однородный $$\sigma = 1$$.</p>
-<h2 id="приближенное-решение-задачи-о-притоке-однофазной-жидкости-к-гс">Приближенное решение задачи о притоке однофазной жидкости к ГС</h2>
+<p>
+Задаче о притоке однофазного флюида к ГС без МГРП. Пласт однородный \( \sigma = 1 \).
+Падением давления вдоль ствола пренебрегаем. 
+Задача сводится к двумерной в плоскости \(y=y_0 \in \left(0, L\right) \). Плоский 
+характер течения нарушается, когда \(y_0\) приближается к концам \(y=0\) и \(y=L\).
+В силу симметри достаточно рассмотреть 1/4 поперечного сечения (рис. 1).
+</p>
+<p>Область фильтрации \(D\) ограничена сверху кровлей пласта, справа&ndash;контуром питания, снизу и слева &ndash;
+линиями симметрии и поверхностью скважины \(\gamma\).</p>
+$$
+\triangle p = 0 \;\;\; в \;\;\;\;\;\; D = [0, 1] \times [0, H] / \gamma    \;\;\;\;\;\;\;\;\;\;\;\;     (1)
+$$
+$$
+\sigma \dfrac{\partial p}{\partial n} = 0 \;\;\;\; при \;\;\;\; x = 0, \; z = 0, \; z = H \;\;\;\;\;\;\;   (2)
+$$
+$$
+p = 0 \;\;\;\; при \;\;\; \left(x, z\right) \in \gamma; \;\; p = 1 \;\;\;\; при \;\;\; x = H \;\;\;\;\;\;\;\;\;\;\;\;     (3)
+$$
+<p>После того как задача (1) &ndash; (3) решена, можно подсчитать удельный \(q\) и полный \(Q\) дебиты скважины по формулам</p>
+$$
+q = \int_{\gamma} \dfrac{\partial p}{\partial n} d\gamma, \;\;\;\; Q = \int_0^L q(y) dy. \;\;\;\;\;\;\;\;\;\;\;\;     
+$$
+<!-- $$
+\;\;\;\;\;\;\;\;\;\;\;\;     (1)
+$$ -->
+<h4 id="приближенное-решение-задачи-о-притоке-к-гс">Приближенное решение задачи о притоке к ГС</h4>
+<p>Задача (1) &ndash; (3) для однородного пласта (\(\sigma \equiv 1\)) описывает течение в узкой (\(H > 1\)) полосе
+единичной длины. На границах \(z=0, \; z = H\) заданы условия симметрии, а отличие от плоско-параллельного течения обусловлено только граничным условием Дирихле \(p=0\) на четверти окружности \(\gamma\) в левом нижнем углу области (рис. 1).</p>
+<p>Утверждение: во всей полосе справа \(x \geq H\) течение плоско-параллельное, а в окрестности \(\gamma \) &ndash; плоско-радиальное.
+Расход жидкости целиком определяется плоско-параллельным течением и равен</p>
+$$
+q = \dfrac{1 - p_{\Gamma}}{1 - H}, \;\;\;\;\;\;\;\;\;\;\;\;     (4)
+$$
+<p>
+где \(p_{\Gamma}\) &ndash; подлежащее определению давления при \(x = H\).</p>
+<h2 id="2-приток-к-скважине-с-мгрп">2. Приток к скважине с МГРП</h2>
+</div>
 <p>You can emphasize text using <em>italic</em> or <strong>bold</strong> styles.</p>
 <h2 id="quotes">Quotes</h2>
 <p>Markdown allows you to include block quotes. Here&rsquo;s an example:</p>
 <blockquote>
 <p>&ldquo;The only way to do great work is to love what you do.&rdquo; - Steve Jobs</p>
 </blockquote>
-<h2 id="imagesfigures">Images/Figures</h2>
-<p>You can include images as figure in your posts. Here&rsquo;s an example:</p>
-<figure><a href="https://unsplash.com/photos/s9KlC-kMFtU?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditShareLink"><img src="https://images.unsplash.com/photo-1571328565610-56f07b8bf3ce"
-    alt="Emergence of Mandakini river from kedar peak"></a><figcaption>
-      <p>Emergence of Mandakini river from kedar peak</p>
-    </figcaption>
-</figure>
-
 <h2 id="tables">Tables</h2>
 <p>Markdown supports tables. Here&rsquo;s an example:</p>
 <table>
@@ -101,4 +132,24 @@
     </div>
 </footer>
 </body>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+
+
+
+
 </html>
