@@ -16,6 +16,13 @@
       <description>To get the greek letter entered into Inkscape do the following:&#xA;Press F8 to get to text mode. Click with mouse on the canvas (Inkscape lingo for page) where you want your text. You will now have the text cursor on the canvas. Press Ctrl U to get into unicode entry mode. The status line at the bottom of the Inkscape window will now show &amp;ldquo;Unicode (enter to finish)&amp;rdquo;. Type 03bc which is the unicode for the µ character, then press Enter (Return), if everything went well you will now have the µ character on the canvas.</description>
     </item>
     <item>
+      <title>Решение одномерного уравнения пьезопроводности в плоско-радиальной постановке</title>
+      <link>http://localhost:1313/radial_laplace_1d/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/radial_laplace_1d/</guid>
+      <description>Рассмотрим уравнение $$ \begin{array}l \dfrac{1}{r}\dfrac{d}{dr} \left(r\dfrac{dp}{dr}\right) = 0, \;\; r_{w} &lt; r &lt; r_{c}; \\ p(r_{w}) = p_{w}, \;\; p(r_{c}) = p_{c} \end{array} \qquad (1) $$ Решение уравнение будет в виде&#xA;$$ \displaystyle \begin{array}l r \dfrac{dp}{dr} = c_{1} \;\; \Rightarrow \dfrac{dp}{dr} = \dfrac{c_{1}}{r} \Rightarrow \operatorname{\Large\int}{\dfrac{dp}{dr} dr} = c_{1} \cdot \operatorname{\Large\int}{\dfrac{1}{r}dr} \Rightarrow \;\; p(r) = c_{1} \cdot \ln(r) + c_{2} \end{array} \qquad (2) $$ Для нахождения коэффициентов \(c_{1}, c_{2}\) составим систему уравнений, используя (2) граничные условия из (1)</description>
+    </item>
+    <item>
       <title>Упрощенная методика оценки эффективности МГРП</title>
       <link>http://localhost:1313/mazo_formula_hw/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
