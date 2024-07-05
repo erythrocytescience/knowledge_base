@@ -1,6 +1,6 @@
 ---
 title: 'Решение одномерного уравнения пьезопроводности в плоско-радиальной постановке'
-date: 2024-07-03
+date: 2024-07-04
 tags: ["одномерная", "плоско-радиальная", "пьезопроводность", "давление"]
 math: true
 
@@ -9,7 +9,7 @@ math: true
 Рассмотрим уравнение 
 $$
 \begin{array}l
-\dfrac{1}{r}\dfrac{d}{dr} \left(r\dfrac{dp}{dr}\right) = 0, \;\; r_{w} < r < r_{c}; \\
+\dfrac{1}{r}\dfrac{d}{dr} \left(r\dfrac{dp}{dr}\right) = 0, \;\; r_{w} \leq r \leq r_{c}; \\
 p(r_{w}) = p_{w}, \;\; p(r_{c}) = p_{c}
 \end{array}
 \qquad (1)

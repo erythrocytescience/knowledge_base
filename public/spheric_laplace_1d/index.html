@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Решение одномерного уравнения пьезопроводности в плоско-радиальной постановке | База знаний</title>
+<title>Решение одномерного уравнения пьезопроводности при сферической симметрии | База знаний</title>
 <meta name="robots" content='noindex, nofollow'>
 <meta name="description" content="">
 <meta name="generator" content="hugo-index">
@@ -26,8 +26,8 @@
       <span>База знаний</span>
     </a>
     <span class="hl">/</span>
-    <a href="http://localhost:1313/radial_laplace_1d/">
-      <span>Решение одномерного уравнения пьезопроводности в плоско-радиальной постановке</span>
+    <a href="http://localhost:1313/spheric_laplace_1d/">
+      <span>Решение одномерного уравнения пьезопроводности при сферической симметрии</span>
     </a>
   </h1>
   <p class="desc"></p>
@@ -38,7 +38,7 @@
   
   <li><a href="http://localhost:1313/tags/%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%BD%D0%B0%D1%8F/">Одномерная</a></li>
   
-  <li><a href="http://localhost:1313/tags/%D0%BF%D0%BB%D0%BE%D1%81%D0%BA%D0%BE-%D1%80%D0%B0%D0%B4%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F/">Плоско-Радиальная</a></li>
+  <li><a href="http://localhost:1313/tags/%D1%81%D1%84%D0%B5%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D0%B8%D0%BC%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F/">Сферическая Симметрия</a></li>
   
   <li><a href="http://localhost:1313/tags/%D0%BF%D1%8C%D0%B5%D0%B7%D0%BE%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%8C/">Пьезопроводность</a></li>
   
@@ -50,28 +50,26 @@
 </p>
 $$
 \begin{array}l
-\dfrac{1}{r}\dfrac{d}{dr} \left(r\dfrac{dp}{dr}\right) = 0, \;\; r_{w} \leq r \leq r_{c}; \\
+\dfrac{1}{r^2}\dfrac{d}{dr} \left(r^2\dfrac{dp}{dr}\right) = 0, \;\; r_{w} \leq r \leq r_{c}; \\
 p(r_{w}) = p_{w}, \;\; p(r_{c}) = p_{c}
 \end{array}
 \qquad (1)
 $$
-<p>Решение уравнение будет в виде</p>
-<!-- $$
-p(r) = C_1 \ln(r) + C_2.
-$$ -->
+<p>Решение уравнение будет в виде
+</p>
 $$
 \displaystyle
 \begin{array}l
-r \dfrac{dp}{dr} = c_{1} \;\; \Rightarrow \dfrac{dp}{dr} = \dfrac{c_{1}}{r} \Rightarrow \operatorname{\Large\int}{\dfrac{dp}{dr} dr} = c_{1} \cdot \operatorname{\Large\int}{\dfrac{1}{r}dr} \Rightarrow \;\; p(r) = c_{1} \cdot \ln(r) + c_{2}
+r^2 \dfrac{dp}{dr} = c_{1} \;\; \Rightarrow \dfrac{dp}{dr} = \dfrac{c_{1}}{r^2} \Rightarrow \operatorname{\Large\int}{\dfrac{dp}{dr} dr} = c_{1} \cdot \operatorname{\Large\int}{\dfrac{1}{r^2}dr} \Rightarrow \;\; p(r) = \dfrac{-c_{1}}{r} + c_{2}
 \end{array}
 \qquad (2)
 $$
-<p>Для нахождения коэффициентов \(c_{1}, c_{2}\) составим систему уравнений, используя (2) граничные условия из (1)</p>
+<p>Для нахождения коэффициентов \(c_{1}, c_{2}\) составим систему уравнений, используя (2) и граничные условия из (1)</p>
 $$
 \left\{
 \begin{array}l
-p(r_{w}) & = \; c_{1} \cdot \ln(r_{w}) + c_{2} & = \; p_{w} \\
-p(r_{c}) & = \; c_{1} \cdot \ln(r_{c}) + c_{2} & = \; p_{c} \\
+p(r_{w}) & = -\dfrac{c_{1}}{r_w} + c_{2} & = p_{w} \\
+p(r_{c}) & = -\dfrac{c_{1}}{r_{c}} + c_{2} & =  p_{c} \\
 \end{array}
 \right.
 \qquad (3)
@@ -79,38 +77,30 @@ $$
 <p>Вычтем первое (из (3)) уравнение из второго
 </p>
 $$
-c_{1} \cdot \left[\ln(r_{c}) - \ln(r_{w})\right] = p_{c} - p_{w},
+c_{1}  \cdot \left[\dfrac{1}{r_{w}} - \dfrac{1}{r_{c}}\right] = p_{c} - p_{w},
 $$
 <p>Откуда получим
 </p>
 $$
-c_{1} = \dfrac{p_{c} - p_{w}}{\ln\left(\dfrac{r_{c}}{r_{w}}\right)}.
+c_{1} = \dfrac{\left(p_{c} - p_{w}\right) r_w r_c}{(r_{c} - r_{w})}.
 $$
 <p>Подставим \(c_1\) в первое уравнение из (3) и найдем \(c_2\).
 </p>
 $$
-c_{2} = \dfrac{p_{w}\cdot \ln(r_{c}) - p_{c} \cdot \ln(r_{w})}{\ln\left(\dfrac{r_{c}}{r_{w}}\right)}.
+c_{2} = p_w + \dfrac{c_1}{r_w} = p_w + \dfrac{\left(p_{c} - p_{w}\right) r_c}{(r_{c} - r_{w})}
 $$
-<details>
-<summary>Подробное вычисление \(c_2\)</summary>
-$$
-\begin{array}l
-c_{2} = p_{w} - c_{1} \cdot \ln(r_{w}) = p_{w} - \dfrac{\ln(r_{w})\left(p_{c} - p_{w}\right)}{\ln\left(\dfrac{r_{c}}{r_{w}}\right)} = \dfrac{p_{w} \cdot\ln\left(\dfrac{r_{c}}{r_{w}}\right) - p_{c} \cdot \ln(r_{w}) + p_{w} \cdot \ln(r_{w})}{\ln\left(\dfrac{r_{c}}{r_{w}}\right)} = \\ = \dfrac{p_{w} \cdot \left[ \ln(r_{c}) - \ln(r_{w})\right] - p_{c} \cdot \ln(r_{w}) + p_{w} \cdot \ln(r_{w})}{\ln\left(\dfrac{r_{c}}{r_{w}}\right)} = \dfrac{p_{w}\cdot \ln(r_{c}) - p_{c} \cdot \ln(r_{w})}{\ln\left(\dfrac{r_{c}}{r_{w}}\right)}.
-\end{array}
-$$
-</details>
 <p>Тогда получим решение
 </p>
 $$
 \begin{array}l
-p(r) = \dfrac{p_c -p_w}{\ln\left(\dfrac{r_c}{r_w} \right)}\ln(r) + \dfrac{p_{w}\cdot \ln(r_{c}) - p_{c} \cdot \ln(r_{w})}{\ln\left(\dfrac{r_c}{r_w} \right)} = \\
-= \dfrac{p_c\ln\left(\dfrac{r}{r_w} \right) + p_w\ln\left(\dfrac{r_c}{r} \right)}{\ln\left(\dfrac{r_c}{r_w} \right)}
+p(r) = p_w + \dfrac{\left(p_{c} - p_{w}\right) r_c}{(r_{c} - r_{w})} - 
+\dfrac{\left(p_{c} - p_{w}\right) r_w r_c}{(r_{c} - r_{w})} \cdot \dfrac{1}{r}
 \end{array}
 $$
 <div style="border: 3px solid red">
 $$
 \begin{array}l
-p(r) = \dfrac{p_c\ln\left(\dfrac{r}{r_w} \right) + p_w\ln\left(\dfrac{r_c}{r} \right)}{\ln\left(\dfrac{r_c}{r_w} \right)}
+p(r) = ....
 \end{array}
 \qquad (4)
 $$
