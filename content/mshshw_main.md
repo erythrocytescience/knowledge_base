@@ -6,8 +6,4 @@ language: 'ru-Ru'
 weigth: 100
 ---
 
-| №    | Ссылка |
-| ------- | --- |
-| 1    | 25  |
-| Jane    | 30  |
-| Michael | 35  |
+{{< md_table_submain folder="mshfhw" manualFiles="mazo_formula_hw.md" >}}
