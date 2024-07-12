@@ -2,7 +2,7 @@
 title: "A Parametric Comparison of Horizontal and Vertical Well Performance"
 date: 2024-07-12
 tags: ["аналитическая формула", "Economides", "ГС", "МГРП"]
-language: 'ru-Ru'
+# language: 'ru-Ru'
 ---
 
 

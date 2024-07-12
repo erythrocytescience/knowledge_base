@@ -17,14 +17,19 @@ math: true
   </thead>
   <tbody>
     <tr>
-      <td>Mukherjee, Economides</td>
-      <td>{{< figure src="/mshfhw/analytic_formulas/image.png" caption="Рис. 1. Область" >}}</td>
+      <td><a href ="../analytic_formulas/economides_1991">Mukherjee, Economides (1991)</a></td>
+      <td>{{< figure src="/mshfhw/analytic_formulas/image.png" width="100600px" height="200px">}}</td>
       <td>
         Область решения: прямоугольный параллелепипед. Скважина находится в центре, трещины ортогональны оси скважины. Трещины бесконечной проницаемости. 
       </td>
       <td>
       $$
-      \begin
+        \begin{array}l
+            q_f = \dfrac{2 k_{H} \left(2 x_f h\right)\triangle p}{\mu B x} \\
+            x = \dfrac{L}{2\left(n-1\right)} \\
+            \triangle p = ???
+        \end{array}
+        % \qquad(1)
       $$
       </td>
     </tr>
@@ -43,18 +48,5 @@ math: true
   </tbody>
 </table>
 
-| Name    | Picture | Description | Formula |
-| ------- | --- | ----- | -----|
-| Mukherjee, Economides    | {{< figure src="/mshfhw/analytic_formulas/image.png" caption="Рис. 1. Область" >}}  |  | \(\) |
-| Jane    | 30  |
-| Michael | 35  |
 
 
-### Экономидес (1991)
-
-
-https://sci-hub.ru/https://doi.org/10.2118/18303-PA
-
-
-
-[Подробнее]({{< relref "analytic_formulas/economides_1991.md" >}} "Подробнее")
