@@ -1,7 +1,7 @@
 ---
-title: "A Simple Analytical Model for Predicting Productivity of Multifractured Horizontal Wells"
+title: "A New Method to Predict Performance of Fractured Horizontal Wells"
 date: 2024-07-12
-tags: ["аналитическая формула", "Guo", "ГС", "МГРП"]
+tags: ["аналитическая формула", "Hujin_Li", "ГС", "МГРП"]
 # language: 'ru-Ru'
 math: true
 ---
@@ -11,16 +11,12 @@ math: true
 <dl>
     <dt>авторы:</dt>
     <dd>Hujun Li, Zhengqi Jia, and Zhaosheng Wei,</dd>
+    <dt>Название:</dt>
+    <dd>A Simple Analytical Model for Predicting Productivity of Multifractured Horizontal Wells</dd>
     <dt>год:</dt>
     <dd>1996</dd>
     <dt>doi:</dt>
     <dd><a href ="https://doi.org/10.2118/37051-MS">Cсылка</a></dd>
-    <dt>tags:</dt>
-    <dd>your_KEYWORDS</dd>
-    <dt>создано:</dt>
-    <dd>08.02.2024</dd>
-    <dt>обновлено:</dt>
-    <dd>08.02.2024</dd>
 </dl>
 </details>
 
