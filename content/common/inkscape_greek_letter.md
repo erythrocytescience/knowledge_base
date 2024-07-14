@@ -1,6 +1,6 @@
 ---
 title: "Greek letter in Inkscape text"
-# date: 2024-07-03
+date: 2024-07-03
 tags: ["greek", "Inkscape", "Unicode"]
 language: 'en-us'
 ---
