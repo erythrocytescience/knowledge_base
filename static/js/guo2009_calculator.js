@@ -56,12 +56,12 @@ export function calculateResultsGuo2009() {
     updateCellValue("over_j_big_r_value", 1.0 / jbr, 2, 'scientific');
     updateCellValue("over_jl_value", 1.0 / jl, 2, 'scientific');
     updateCellValue("over_j_small_r_value", 1.0 / jsr, 2, 'scientific');
-    let sum = 1.0 / jbr + 1.0 / jl + 1.0 /jsr;
+    let sum = 1.0 / jbr + 1.0 / jl + 1.0 / jsr;
     updateCellValue("sum_value", sum, 2, 'scientific');
     updateCellValue("over_sum_value", 1.0 / sum, 2, 'scientific');
     let dp = (pc - pw);
     updateCellValue("q_sec_value", dp / sum, 2, 'scientific');
-    
+
     updateCellValue("q_day_value", dp / sum * 24 * 60 * 60, 2, 'scientific');
 }
 
@@ -113,7 +113,7 @@ function calcJBigR(k, h, mu, f) {
 
 function calcF(a, c_a, rl) {
     let numerator = 4.0 * a;
-    let denminator = gamma * c_a * rl ^ 2;
+    let denminator = gamma * c_a * rl ** 2;
     return numerator / denminator;
 }
 
@@ -158,7 +158,7 @@ function calcC_A(ah) {
 }
 
 function calcA(rl) {
-    return Math.PI * rl ^ 2;
+    return Math.PI * rl ** 2;
 }
 
 function calcRl(xf_aver, ze_aver, n) {
@@ -190,7 +190,8 @@ function getZes(arr) {
         }
     }
 
-    return result;
+    // Divide all results by 2 at the end
+    return result.map(value => value / 2);
 }
 
 function updateCellValue(cell_id_name, value, decimalPlaces = 2, formatType = 'decimal') {
