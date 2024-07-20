@@ -9,5 +9,20 @@ function calcListAverage(l) {
     return average;
 }
 
+function getMaximum(arr) {
+    if (arr.length === 0) {
+        throw new Error("Array is empty");
+    }
+    return Math.max(...arr);
+}
+
+function getMin(arr) {
+    if (arr.length === 0) {
+        throw new Error("Array is empty");
+    }
+    return Math.min(...arr);
+}
+
+
 // Export the function
-export { calcListAverage };
+export { calcListAverage,  getMaximum, getMin };

@@ -200,14 +200,6 @@ function updateCellValue(cell_id_name, value, decimalPlaces = 2, formatType = 'd
     cell.innerHTML = formattedValue;
 }
 
-// function calcAver() {
-
-// }
-
-// Export the function
-// export { calculateResultsGuo2009 };
-
-
 // Attach event listener to the button after DOM content is loaded
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('calculateButton').addEventListener('click', calculateResultsGuo2009);
