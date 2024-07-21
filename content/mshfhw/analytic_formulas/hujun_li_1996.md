@@ -58,11 +58,42 @@ $$
 Перепад давления, вызванный сходимостью вблизи ГС
 $$
 \triangle p_3 =  \dfrac{1}{2 \pi} \dfrac{Q_i \mu}{k_f w} \left(\ln\left[\dfrac{h}{2r_w}\right] - \dfrac{\pi}{2}\right)
+\qquad(3)
 $$
 
 В итоге, полный перепад давления в одном регионе
 $$
+\triangle p = p_r - p_w = \dfrac{Q_i \mu}{2}
+\left[
+    \dfrac{L^* - x_f}{kh \left({L_f}_1 + {L_f}_2\right)} + 
+    \dfrac{1}{k h x_f \left(\dfrac{1}{{L_f}_1} + \dfrac{1}{{L_f}_2} \right)} +
+    \dfrac{x_f}{k_f h w} +
+    \dfrac{1}{k_f w \pi} \left( \ln \dfrac{h}{2r_w} - \dfrac{\pi}{2}\right)
+\right]
+\qquad(4)
+$$
 
+\(L_{f_1}\) это половина расстояние между текущей трещиной и той, которая слева от нее, \(L_{f_2}\) -- которая справа от нее.
+Если интересующая нас трещина находится на краю ГС, тогда \(L_{f_1}\) или \(L_{f_2}\) будут равны расстоянию между трещиной и внешней границей.
+
+Отсюда 
+$$
+Q_i = \dfrac{2\pi k h \left(p_r - p_w\right)}{\mu} \cdot \dfrac{1}{A}
+\qquad(5)
+$$
+
+$$
+A = \dfrac{\pi \left(L^* - x_f\right)}{\left({L_f}_1 + {L_f}_2\right)} + 
+    \dfrac{\pi}{x_f \left(\dfrac{1}{{L_f}_1} + \dfrac{1}{{L_f}_2} \right)} +
+    \dfrac{\pi x_f k}{k_f w} +
+    \dfrac{k h}{k_f w} \left( \ln \dfrac{h}{2r_w} - \dfrac{\pi}{2}\right)
+\qquad(6)
+$$
+
+Уравнения (5) и (6) в системе СИ. Если ГС имеет \(n\) вертикальных трещин, тогда общий дебит
+$$
+Q = \sum_{i=1}^n Q_i
+\qquad(7)
 $$
 
 ##### ГС с \(n\) вертикальными трещинами и частично перфорированная
@@ -75,55 +106,17 @@ $$
 
 ### Заключение
 
-Используются  по моделированию.
-
-
-
-
-
-## Математическая модель
-
-### ГС с $N$ вертикальными трещинами
-Сумма притока из каждого региона.
-Перепад давления:
-
-$$
-\triangle p = ...
-$$
-
-Дебит i-ой трещины
-$$
-\triangle p = p_r - p_w = \dfrac{Q_i \mu}{2}
-\left[
-    \dfrac{L^* - x_f}{kh \left({L_f}_1 + {L_f}_2\right)} + 
-    \dfrac{1}{k h x_f \left(\dfrac{1}{{L_f}_1} + \dfrac{1}{{L_f}_2} \right)} +
-    \dfrac{x_f}{k_f h w} +
-    \dfrac{1}{k_f w \pi} \left( \ln \dfrac{h}{2r_w} - \dfrac{\pi}{2}\right)
-\right]
-$$
-
-$$
-Q_i = \dfrac{2\pi k h \left(p_r - p_w\right)}{\mu} \cdot \dfrac{1}{A}
-$$
-
-$$
-A = \dfrac{\pi \left(L^* - x_f\right)}{\left({L_f}_1 + {L_f}_2\right)} + 
-    \dfrac{\pi}{x_f \left(\dfrac{1}{{L_f}_1} + \dfrac{1}{{L_f}_2} \right)} +
-    \dfrac{\pi x_f k}{k_f w} +
-    \dfrac{k h}{k_f w} \left( \ln \dfrac{h}{2r_w} - \dfrac{\pi}{2}\right)
-$$
-
-Просуммировать от 1 до N. 
-
-
+### Номенклатура
+- \(L^*\) -- расстояние от внешней границы дренирования до ствола ГС, м
+- \(n\) -- количество трещин, б.р.
 
 ### References
-1. Joshi, S.D.: "A Review of Horizontal Well and Drainhole Tech- nology," paper SPE 16868 presented at the 62nd Annual Techni- cal Conference and Exhibition of the Society of Petroleum Engi- neer held in Dallas, TX, October 27-30, 1987.
-2. Bendakhlia, H. and Aziz, K.: "Inflow Performance Relationships for Solution-Gas Drive Horizontal Well," paper SPE 19823 pre- sented at the 64th Annual Technical Conference and Exhibition of the Society of Petroleum Engineer held in San Antonio, TX, October 8-11, 1989.
-3. Norris, S.O., Hunt, J.L., Soliman, M.Y. and Puthigai, S.K.: "Pre- dicting Horizontal Well Performance: A Review of Current Te- chnology," paper SPE 21793 presented at the Western Regional Meeting, Long Besch, CA, March 20-22, 1991.
-4. Karcher, R.J., Giger, F.M. and Combe, J.: "Some Practical For- mulas to Predict Horizontal Well Behavior, paper SPE 15430 presented at the 61st Annual Technical Conference and Exhibit- ion of the Society of Petroleum Engineer held in New Orleans, LA, October 5-8, 1986.
+1. Joshi, S.D.: "A Review of Horizontal Well and Drainhole Technology," paper SPE 16868 presented at the 62nd Annual Techni- cal Conference and Exhibition of the Society of Petroleum Engi- neer held in Dallas, TX, October 27-30, 1987.
+2. Bendakhlia, H. and Aziz, K.: "Inflow Performance Relationships for Solution-Gas Drive Horizontal Well," paper SPE 19823 presented at the 64th Annual Technical Conference and Exhibition of the Society of Petroleum Engineer held in San Antonio, TX, October 8-11, 1989.
+3. Norris, S.O., Hunt, J.L., Soliman, M.Y. and Puthigai, S.K.: "Predicting Horizontal Well Performance: A Review of Current Te- chnology," paper SPE 21793 presented at the Western Regional Meeting, Long Besch, CA, March 20-22, 1991.
+4. Karcher, R.J., Giger, F.M. and Combe, J.: "Some Practical Formulas to Predict Horizontal Well Behavior, paper SPE 15430 presented at the 61st Annual Technical Conference and Exhibition of the Society of Petroleum Engineer held in New Orleans, LA, October 5-8, 1986.
 5. Soliman, M.Y., Hunt, J.L. and Ei Rabbaa: "Fracturing Aspects of Horizontal Wells," JPT (August 1990) 966.
-6. Mukherjee, H. and Economides, M.J.: "A Parametric Compari- son of Horizontal and vertical Well Performance," SPE Forma- tion Eveluation (June 1991) 209.
+6. Mukherjee, H. and Economides, M.J.: "A Parametric Comparison of Horizontal and vertical Well Performance," SPE Formation Eveluation (June 1991) 209.
 7. Economides, M.J., McLennan, J.D., Brown, E. and Rocgiers, J. C.: "Performance and Stimulation of Horizontal Well," World Oil (June 1989) 41.
-8. Jia, Z.Q., Li, H.J. and Sun, X.H.: "An Experimental Study of Pre- ssure Distribution on Electrolytic Models for Horizontal Wells," Journal of Daging Petroleum Institute, Vol. 18, No 4, 1994. 
+8. Jia, Z.Q., Li, H.J. and Sun, X.H.: "An Experimental Study of Pressure Distribution on Electrolytic Models for Horizontal Wells," Journal of Daging Petroleum Institute, Vol. 18, No 4, 1994. 
 9. Jia, Z.Q., Zhang, L.N., Wang, L.J., and Ying, D.Y.: Methods for Designing and Developing Oil Fields, the Press of Haerbin Industry University, Haerbin, China (1994) 210.
