@@ -97,7 +97,7 @@ $$
 
 #### <a href ="../analytic_formulas/hujun_li_1996">Hujun, Li (1996)</a>
 
-<center>{{< figure src="/mshfhw/analytic_formulas/image_hujin_li_1996_1.png"  caption="Рис.2 " width="300">}}</center>
+<center>{{< figure src="/mshfhw/analytic_formulas/images/image_hujin_li_1996_1.png"  caption="Рис.2 " width="300">}}</center>
 
 $$
   \begin{array}l
