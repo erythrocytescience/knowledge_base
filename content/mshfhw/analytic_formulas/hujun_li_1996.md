@@ -96,6 +96,81 @@ Q = \sum_{i=1}^n Q_i
 \qquad(7)
 $$
 
+###### Калькулятор 
+
+  <script type="module" src="/js/hujunli1996_calculator.js" defer></script>
+  <script type="module" src="/js/hujunli1996_plotter.js"></script>
+
+<table id="tableInput" border="1">
+    <tr>
+        <th>Параметр</th>
+        <th>Значение</th>
+    </tr>
+    <tr>
+        <td>Среднее давление пласта, атм</td>
+        <td><input type="number" id="press_res" min="1" value="100"></td>
+    </tr>
+    <tr>
+        <td>Высота пласта, м</td>
+        <td><input type="number" id="h_res" min="1" value="10"></td>
+    </tr>
+    <tr>
+        <td>Радиус контура питания, м</td>
+        <td><input type="number" id="rc" min="1" value="150"></td>
+    </tr>
+    <tr>
+        <td>Проницаемость пласта, Д</td>
+        <td><input type="number" id="k_res" min="0.001" step="0.001" value="1"></td>
+    </tr>
+    <tr>
+        <td>Давление на скважине, атм</td>
+        <td><input type="number" id="press_well" min="1" value="10"></td>
+    </tr>
+    <tr>
+        <td>Радиус скважины, см</td>
+        <td><input type="number" id="rad_well" min="1" value="8"></td>
+    </tr>
+    <tr>
+        <td>Длина скважины, м</td>
+        <td><input type="number" id="len_well" min="1" value="1000"></td>
+    </tr>
+    <tr>
+        <td>Вязкость жидкости, сП</td>
+        <td><input type="number" id="mu" min="0.001" step="0.001" value="1"></td>
+    </tr>
+    <tr>
+        <td>Количество трещин, шт</td>
+        <td><input type="number" id="frac_count" min="2" value="2"></td>
+    </tr>
+    <tr>
+        <td>Полудлина трещин, м</td>
+        <td><input type="text" id="frac_xfs" value="100, 100"></td>
+    </tr>
+    <tr>
+        <td>Координата (глубин) трещин, м</td>
+        <td><input type="text" id="frac_yfs" value="100, 200"></td>
+    </tr>
+    <tr>
+        <td>Ширина трещин, мм</td>
+        <td><input type="text" id="frac_ws" value="5, 5"></td>
+    </tr>
+    <tr>
+        <td>Проницаемость трещин, Д</td>
+        <td><input type="text" id="frac_kfs" value="1000, 1000"></td>
+    </tr>
+</table>
+
+**Внимание:** значения для трещин задаются через запятую. Например, полудлина трех трещин "100, 200, 120".
+
+<br><br>
+    <input type="button" value="Вычислить" id="calculateButton">
+    <input type="button" value="Нарисовать область" id="drawNoWellDomainButton">
+<br><br>
+
+
+<svg id="hujunLiDomain" baseProfile="tiny" height="120mm" version="1.2" width="157mm" xmlns="http://www.w3.org/2000/svg"></svg>
+
+
 ##### ГС с \(n\) вертикальными трещинами и частично перфорированная
 
 ### Факторный анализ и примеры
