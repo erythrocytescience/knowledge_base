@@ -167,6 +167,16 @@ $$
     <input type="button" value="Нарисовать область" id="drawNoWellDomainButton">
 <br><br>
 
+<table id="tableOutput" border="1">
+  <tr>
+    <th>Параметр</th>
+    <th>Значение</th>
+  </tr>
+  <tr>
+    <td>\(Q\)</td>
+    <td id="q_value"></td>
+  </tr>
+</table>
 
 <svg id="hujunLiDomain" baseProfile="tiny" height="120mm" version="1.2" width="157mm" xmlns="http://www.w3.org/2000/svg"></svg>
 
