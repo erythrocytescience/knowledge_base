@@ -173,7 +173,7 @@ $$
     <th>Значение</th>
   </tr>
   <tr>
-    <td>\(Q\)</td>
+    <td>\(Q, \;\; \text{м}^3/c\)</td>
     <td id="q_value"></td>
   </tr>
 </table>
