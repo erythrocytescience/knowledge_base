@@ -1,6 +1,6 @@
 ---
 title: Index
-description: Index's description
+description: Описание
 ---
 
 База знаний
