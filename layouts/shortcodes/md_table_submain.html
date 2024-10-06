@@ -1,0 +1,39 @@
+{{ $folderPath := .Get "folder" }}
+{{ $manualFiles := .Get "manualFiles" | default "" }}
+{{ $files := readDir (printf "content/%s" $folderPath) }}
+
+{{ $table := "| №   | Ссылка |\n| --- | ------ |\n" }}
+{{ $lastIndex := 0 }}
+
+{{ range $index, $file := $files }}
+  {{ if and (not $file.IsDir) (in $file.Name ".md") }}
+    {{ $page := $.Site.GetPage (printf "%s/%s" $folderPath (replace $file.Name ".md" "")) }}
+    {{ $row := printf "| %d | [%s](%s) |\n" (add $index 1) $page.Title $page.RelPermalink }}
+    {{ $table = printf "%s%s" $table $row }}
+    {{ $lastIndex = add $index 1 }}
+  {{ end }}
+{{ end }}
+
+<!-- Process manual files if provided -->
+{{ if $manualFiles }}
+  {{ $manualRows := split $manualFiles "," }}
+  {{ range $i, $manualFile := $manualRows }}
+    {{ $manualFile := trim $manualFile " " }}
+    {{printf "%s" $manualFile | safeHTML}}
+    {{ if ne $manualFile "" }}
+      {{ $page := $.Site.GetPage (printf "%s" (replace $manualFile ".md" "")) }}
+      {{ if $page }}
+        {{ $row := printf "| %d | [%s](%s) |\n" (add $lastIndex 1) $page.Title $page.RelPermalink }}
+        {{ $table = printf "%s%s" $table $row }}
+        {{ $lastIndex = add $lastIndex 1 }}
+      {{ else }}
+        <!-- Debug message: Print a warning if resource is not found -->
+        {{ printf "Debug: Resource not found for manual file '%s'" $manualFile | safeHTML }}
+      {{ end }}
+    {{else}}
+        {{ printf "Debug: AAA" | safeHTML }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $table | markdownify }}
