@@ -66,17 +66,17 @@
 линиями симметрии и поверхностью скважины \(\gamma\).</p>
 $$
 \triangle p = 0 \;\;\; в \;\;\;\;\;\; D = [0, 1] \times [0, H] / \gamma    
-\qquad (1)
+\qquad (1.1)
 $$
 $$
 \sigma \dfrac{\partial p}{\partial n} = 0 \;\;\;\; при \;\;\;\; x = 0, \; z = 0, \; z = H 
-\qquad (2)
+\qquad (1.2)
 $$
 $$
 p = 0 \;\;\;\; при \;\;\; \left(x, z\right) \in \gamma; \;\; p = 1 \;\;\;\; при \;\;\; x = H 
-\qquad (3)
+\qquad (1.3)
 $$
-<p>После того как задача (1) &ndash; (3) решена, можно подсчитать удельный \(q\) и полный \(Q\) дебиты скважины по формулам</p>
+<p>После того как задача (1.1) &ndash; (1.3) решена, можно подсчитать удельный \(q\) и полный \(Q\) дебиты скважины по формулам</p>
 $$
 q = \int_{\gamma} \dfrac{\partial p}{\partial n} d\gamma, \;\;\;\; Q = \int_0^L q(y) dy. \;\;\;\;\;\;\;\;\;\;\;\;     
 $$
@@ -84,13 +84,13 @@ $$
 \;\;\;\;\;\;\;\;\;\;\;\;     (1)
 $$ -->
 <h4 id="приближенное-решение-задачи-о-притоке-к-гс">Приближенное решение задачи о притоке к ГС</h4>
-<p>Задача (1) &ndash; (3) для однородного пласта (\(\sigma \equiv 1\)) описывает течение в узкой (\(H > 1\)) полосе
+<p>Задача (1.1) &ndash; (1.3) для однородного пласта (\(\sigma \equiv 1\)) описывает течение в узкой (\(H > 1\)) полосе
 единичной длины. На границах \(z=0, \; z = H\) заданы условия симметрии, а отличие от плоско-параллельного течения обусловлено только граничным условием Дирихле \(p=0\) на четверти окружности \(\gamma\) в левом нижнем углу области (рис. 1).</p>
 <p>Утверждение: во всей полосе справа \(x \geq H\) течение плоско-параллельное, а в окрестности \(\gamma \) &ndash; плоско-радиальное.
 Расход жидкости целиком определяется плоско-параллельным течением и равен</p>
 $$
 q = \dfrac{1 - p_{\Gamma}}{1 - H},
-\qquad (4)
+\qquad (1.4)
 $$
 <p>
 где \(p_{\Gamma}\) &ndash; подлежащее определению давления при \(x = H\).
@@ -108,23 +108,35 @@ $$
 </p>
 $$
 p(r)= p_{\Gamma}\dfrac{\ln(r /r_w)}{\ln(H / r_w)}
+\qquad(1.5)
 $$
 <p>скорость притока
 </p>
 $$
-u_n = \left.\dfrac{dp}{dr}\right|_{r=r_w} = \dfrac{p_{\Gamma}}{r_w \ln(H/r_w)}, \;\;
-q = \theta \dfrac{\pi r_w}{2}u_n = \theta \dfrac{\pi p_{\Gamma}}{2\ln(H/r_w).}
-\qquad (5)
+u_n = \left.\dfrac{dp}{dr}\right|_{r=r_w} = \dfrac{p_{\Gamma}}{r_w \ln(H/r_w)},
 $$
 <p>
-\(\theta\) &ndash; форм фактор (поправочный коэффициент).
-Приравняв значения \(q\) из (4) и (5), найдем
+тогда дебит \(q\) получим, умножив скорость на четверть боковой поверхности цилиндра радиуса \(r_w\)
+</p>
+$$
+q = \theta \dfrac{\pi r_w}{2}u_n = \theta \dfrac{\pi p_{\Gamma}}{2\ln(H/r_w)}
+\qquad (1.6)
+$$
+<p>
+где \(\theta\) &ndash; форм фактор (поправочный коэффициент).</p>
+<p>Приравняв значения \(q\) из (1.4) и (1.6), найдем
 </p>
 $$
 p_{\Gamma} = \dfrac{1}{1+a}, \;\;
 a = \dfrac{\theta \pi \left(1-H\right)}{2 \ln(H/r_w)}; \;\;
-q = \dfrac{a}{\left(1-H\right)(1+a)}
-\qquad (6)
+\qquad (1.7)
+$$
+<p>
+Тогда из (1.6), подставив \(p_{\Gamma}\) из (1.7), получим
+</p>
+$$
+q = \dfrac{a}{\left(1-H\right)(1+a)}, \;\;\; a = \dfrac{\theta \pi \left(1-H\right)}{2 \ln(H/r_w)}; \;\;
+\qquad (1.8)
 $$
 <p>
 Давление на дуге единичной окружности \(\Gamma\), полученное при численном решении задачи, отличается от константы \(p_{\Gamma}\) в приближенной модели не более
@@ -152,40 +164,50 @@ $$
 $$
 p(r) = \dfrac{p_{\Gamma} H (r - r_w)}{(H - r_w)}\dfrac{1}{r}
 $$
+<p>
+скорость притока</p>
 $$
-\begin{array}l
 u_n = \left.\dfrac{dp}{dr}\right|_{r=r_w} = \left.\dfrac{p_{\Gamma} H r_w}{(H-r_w)r^2}\right|_{r=r_w} = 
-\dfrac{p_{\Gamma} H}{(H-r_w)r_w}, \\
-q = \theta \dfrac{\pi r_w}{2}u_n = \theta \dfrac{\pi p_{\Gamma} H}{2(H - r_w)}.
-\end{array}
-\qquad(1.7)
+\dfrac{p_{\Gamma} H}{(H-r_w)r_w},
 $$
-<p>Здесь \(q_s\) – удельный приток флюида из четверти внешней полусферы. Эта величина полностью
-определяется внешним плоско-радиальным течением и по аналогии с (1.5) равна
+<p>
+тогда дебит \(q_s\) скважины
+</p>
+$$
+q_s = \theta \dfrac{\pi r_w^2}{2}u_n = \theta \dfrac{\pi p_{\Gamma} H r_w}{2(H - r_w)}
+\qquad(1.9)
+$$
+<p>Величина флюида из четверти внешнего цилиндра определяется плоско-радиальным течением
+и по аналогии с (1.6) равна
 </p>
 $$
 q_s = \dfrac{\pi (1 - p_{\Gamma})}{2 \ln(1/H)} = \dfrac{\pi (p_{\Gamma}-1)}{2 \ln(H)}
-\qquad (1.8)
-$$
-<p>Приравняв значения расходов (1.7) и (1.8), найдем искомое давление \(p_{\Gamma}\) :
-</p>
-$$
-p_{\Gamma} = \dfrac{a}{a-\theta H \ln(H)}, \;\;\; a = (H - r_w), \;\;\; 
-q_s = \dfrac{\theta \pi a H}{2(H - r_w)(a - \theta H \ln(H))}
-\qquad(1.9)
-$$
-<p>Таким образом, полный дебит \(Q\) горизонтальной скважины складывается из
-дебита \(q\) основной части ствола (1.5) и двух дебитов \(q_s\) концевых участков (1.9).
-В действительности смена симметрии течения в окрестности концов скважины происходит плавно,
-поэтому можно принять следующую формулу для полного дебита:
-</p>
-$$
-Q = L(1 - \alpha) \cdot q + L \cdot \alpha \cdot q_s,
 \qquad (1.10)
 $$
+<p>Приравняв значения расходов (1.9) и (1.10), найдем искомое давление \(p_{\Gamma}\) :
+</p>
+$$
+p_{\Gamma} = \dfrac{a}{a-\theta H r_w \ln(H)}, \;\;\; a = (H - r_w), \;\;\; 
+\qquad(1.11)
+$$
 <p>
-где \(\alpha\) – параметр, который выбирается так, чтобы вычисленный по формуле (1.10)
-дебит \(Q\) совпадал с полученным численно при решении трехмерной задачи.</p>
+Тогда из (1.9), подставив \(p_{\Gamma}\) из (1.11), получим
+</p>
+$$
+q_s = \dfrac{\theta \pi a H r_w}{2a(a - \theta H r_w \ln(H))} , \;\;\; a = (H - r_w), \;\;\; 
+\qquad(1.12)
+$$
+<p>Таким образом, полный дебит \(Q\) горизонтальной скважины (в 1/4 поперечного сечения) складывается из
+дебита \(q\) основной части ствола (1.8) и двух дебитов \(q_s\) концевых участков (1.12):</p>
+<!-- В действительности смена симметрии течения в окрестности концов скважины происходит плавно, 
+поэтому можно принять следующую формулу для полного дебита: -->
+$$
+% Q = L(1 - \alpha) \cdot q + L \cdot \alpha \cdot q_s,
+Q = L \cdot q + 2 \cdot q_s.
+\qquad (1.12)
+$$
+<!-- где \(\alpha\) – параметр, который выбирается так, чтобы вычисленный по формуле (1.10)
+дебит \(Q\) совпадал с полученным численно при решении трехмерной задачи. -->
 <h2 id="2-приток-к-скважине-с-мгрп">2. Приток к скважине с МГРП</h2>
 <p>Перейдем к рассмотрению общего случая горизонтальной скважины с многостадийным гидравлическим
 разрывом пласта. Выберем один фрагмент \(D\) четверти области, ограниченный двумя вертикальными
@@ -202,14 +224,17 @@ $$
 $$
 \begin{array}l
 \triangle p = 0; \\
-p|_{\gamma} = 0; \;\; p=1 \;\; при \;\; x=1;
 \end{array}
 \qquad(2.1)
 $$
+<p>
+с граничными условиями
+</p>
 $$
 \begin{array}l
+p|_{\gamma} = 0; \;\; p=1 \;\; при \;\; x=1; \\ \\ 
 \dfrac{\partial p}{\partial n} = 0 \;\;\; при \;\; x = 0; \;\;\;
-y = d; \;\; y=0, \;\;\; x>h; \;\; z = 0, H; \\
+y = d; \;\; y=0, \;\;\; x>h; \;\; z = 0, H; \\ \\
 p = p_f \;\; при \;\; y=0, \;\; x \leq h.
 \end{array}
 \qquad(2.2)
@@ -220,8 +245,14 @@ $$
 \triangle p_f + \dfrac{1}{M}\left.\dfrac{\partial p}{\partial y}\right|_{y = 0} = 0,
 \qquad(2.3)
 $$
+<p>
+с граничными условиями
+</p>
 $$
-\left. p_f\right|_{\gamma};  \;\;\; \dfrac{\partial p}{\partial n} = 0 \;\;\; при \;\;\; x = h, \;\; x = 0.
+\begin{array}l
+\left. p_f\right|_{\gamma} = 0; \\ \\
+\dfrac{\partial p}{\partial n} = 0 \;\;\; при \;\;\; x = 0, h; \;\; z = 0, H;
+\end{array}
 \qquad(2.4)
 $$
 <p>При конечных \(M\) приближенное решение задачи можно получить, положив
@@ -230,8 +261,9 @@ $$
 $$
 \begin{array}l
 \dfrac{1}{r}\dfrac{\partial}{\partial r} \left(r \dfrac{\partial p_f}{\partial r}\right) + 
-\dfrac{1}{M}\left.\dfrac{\partial p}{\partial y}\right|_{y = 0} = 0, \;\; r_w \leq r \leq H, \\
-p_f = 0 \;\;\; при \;\;\; r = r_w; \dfrac{\partial p_f}{\partial r} = 0 \;\;\; при \;\;\; r = H
+\dfrac{1}{M}\left.\dfrac{\partial p}{\partial y}\right|_{y = 0} = 0, \;\; r_w \leq r \leq H, \\ \\
+p_f = 0 \;\;\; при \;\;\; r = r_w; \\ \\ 
+\dfrac{\partial p_f}{\partial r} = 0 \;\;\; при \;\;\; r = H
 \end{array}
 \qquad(2.5)
 $$
@@ -242,7 +274,7 @@ $$
 \qquad(2.6)
 $$
 <p>где \(p_d(r)\) – давлениe в пласте в плоскости симметрии \(y = d\), разделяющей сегменты
-ГС. Считаем, что эта функция имеет тот же вид, что и в задаче без трещины ГРП:
+ГС. Считаем, что эта функция имеет тот же вид, что и в задаче без трещины ГРП (1.5):
 </p>
 $$
 p_d(r) = p_{\Gamma}\dfrac{\ln(r/r_w)}{\ln(H/r_w)}
@@ -268,7 +300,7 @@ $$
 \begin{array}l
 \dfrac{1}{r}\dfrac{d}{dr}\left(r \dfrac{dp_1}{dr}\right) - \dfrac{p_1}{Md} = \dfrac{1}{Md}\dfrac{\ln(r/r_w)}{\ln(H/r_w)}, \;\;\;
 r_w \leq r \leq H,
-\\
+\\ \\
 p_1(r_w) = 0, \;\; \dfrac{dp_1}{dr}(H) = 0.
 \end{array}
 \qquad(2.10)
@@ -286,10 +318,10 @@ $$
 $$
 \displaystyle
 \begin{array}l
-Q_f = p_{\Gamma} \theta_f \left(I_d - I_1\right), \\
+Q_f = p_{\Gamma} \theta_f \left(I_d - I_1\right), \\ \\
 I_d  = \dfrac{\pi}{2d}\operatorname{\Large\int}_{r_w}^{H} r \dfrac{\ln(r/r_w)}{\ln(H/r_w)} = 
-\dfrac{\pi}{8d \ln(H/rw)} \left(r_w^2+2H^2\ln(H/r_w)-H^2\right);
- \\
+\dfrac{\pi}{8d \ln(H/r_w)} \left(r_w^2+2H^2\ln(H/r_w)-H^2\right);
+ \\ \\ 
 I_1 = \dfrac{\pi}{2d}\operatorname{\Large\int}_{r_w}^{H} p_1(r)rdr.
 \end{array}
 \qquad(2.12)
@@ -304,86 +336,114 @@ $$
 </span></span><span style="display:flex;"><span>(<span style="color:#f92672">%</span>o8)	(rw<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span><span style="color:#f92672">+</span><span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>H<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>log(H<span style="color:#f92672">/</span>rw)<span style="color:#f92672">-</span>H<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">/</span>(<span style="color:#ae81ff">4</span><span style="color:#f92672">*</span>log(H<span style="color:#f92672">/</span>rw))
 </span></span></code></pre></div></details>
 <p>Осталось найти константу \(p_{\Gamma}\) – давление на фиктивном контуре \({\Gamma}\). Для этого
-составим балансовое уравнение из (2.12) и притока \(Q_w\) к скважине
+составим балансовое уравнение из (2.12) и притока \(Q_{\gamma}\) к скважине
 </p>
 $$
-Q = Q_w + Q_f = Q_w + p_{\Gamma} \theta_f \left(I_d - I_1\right),
+Q = Q_{\gamma} + Q_f = Q_{\gamma} + p_{\Gamma} \theta_f \left(I_d - I_1\right),
 \qquad(2.13)
 $$
 <p>
 откуда
 </p>
 $$
-p_{\Gamma} = \dfrac{Q - Q_w}{\theta_f \left(I_d - I_1\right)}
+p_{\Gamma} = \dfrac{Q - Q_{\gamma}}{\theta_f \left(I_d - I_1\right)}
 \qquad(2.14)
 $$
-<p>Для основных участков ствола скважины, согласно (1.4) и (1.5),
+<figure><img src="/images/mazo_formula_hw_q_qgamma_explain.png"
+    alt="Рис. 4. Схема притока к скважине с МГРП"><figcaption>
+      <p>Рис. 4. Схема притока к скважине с МГРП</p>
+    </figcaption>
+</figure>
+
+<p>Так \(Q\) с учетом (1.4) и (1.10) будет  (см. рис. 4)
 </p>
 $$
-Q = \dfrac{(1 - p_{\Gamma})d}{(1 - H)}; \;\;\;
-Q_w = \dfrac{\pi d p_{\Gamma} \theta}{2\ln(H/r_w)}
+\displaystyle
+\begin{array}l
+Q = Q_{G_1} + Q_{G_2} \\ \\ 
+Q_{G_1} = \dfrac{(1 - p_{\Gamma})d}{(1 - H)}, \;\;\; Q_{G_2} = \dfrac{\pi (p_{\Gamma}-1)}{2 \ln(H)}
+\end{array}
 \qquad(2.15)
 $$
 <p>
-а для концевых участков, согласно (1.8) и (1.10),</p>
+а \(Q_{\gamma}\) с учетом (1.6) и (1.9)
+</p>
 $$
+\displaystyle
 \begin{array}l
-Q = \dfrac{(1 - p_{\Gamma})d}{(1 - H)} + \dfrac{\pi (p_{\Gamma}-1)}{2 \ln(H)}; \\
-Q_w = L(1 - \alpha) \cdot \dfrac{\theta \pi (p_{\Gamma}-1)}{2 \ln(H)} + L \cdot \alpha \cdot \theta \dfrac{\pi p_{\Gamma} H}{2(H - r_w)},
+Q_{\gamma} = Q_{{\gamma}_1} + Q_{\gamma_2} \\ \\ 
+Q_{\gamma_1} = \dfrac{\pi \theta d p_{\Gamma} }{2\ln(H/r_w)} \;\;\;
+Q_{\gamma_2} = \dfrac{\pi \theta H r_w p_{\Gamma} }{2(H - r_w)}
+% Q_{\gamma} = \dfrac{\pi d p_{\Gamma} \theta}{2\ln(H/r_w)}, \;\;\; Q__{\gamma_2} = \dfrac{\pi (p_{\Gamma}-1)}{2 \ln(H)}
 \end{array}
 \qquad(2.16)
 $$
-<p>
-Для (2.15)
+<p>Определим \(p_{\Gamma}\) из (2.14) с учетом (2.15) и (2.16)</p>
+<p>Будем все делать шаг за шагом.</p>
+<ol>
+<li>
+<p>Выражение для \(Q\)
 </p>
 $$
+\displaystyle
 \begin{array}l
-p_{\Gamma} = \dfrac{2d \ln(H/r_w)}{A}, \;\; \\
-A = 2 \theta_f \left(I_d - I_1\right) \ln(H/r_w)(1-H) + 2d \ln(H/r_w) + \pi d \theta(1-H).
+Q = Q_{G_1} + Q_{G_2} = \dfrac{d - d p_{\Gamma}}{1-H} + \dfrac{\pi p_{\Gamma} - \pi}{2\ln \left(H\right)} = \\ \\ 
+= \dfrac{2d\ln \left(H\right) - 2d\ln \left(H\right) p_{\Gamma} + p_{\Gamma} \pi \left(1-H\right) - \pi \left(1-H\right)}{\left(1-H\right) 2\ln \left(H\right)} = \\ \\
+= p_{\Gamma}\dfrac{\pi \left(1-H\right) - 2d\ln \left(H\right)}{\left(1-H\right) 2\ln \left(H\right)} + \dfrac{2d\ln \left(H\right) - \pi \left(1-H\right)}{\left(1-H\right) 2\ln \left(H\right)} = \\ \\ 
+= p_{\Gamma}\dfrac{\pi \left(1-H\right) - 2d\ln \left(H\right)}{\left(1-H\right) 2\ln \left(H\right)} - \dfrac{\pi \left(1-H\right) - 2d\ln \left(H\right)}{\left(1-H\right) 2\ln \left(H\right)} \\ \\
+Q = A \cdot p_{\Gamma} - A, \;\;\; A = \dfrac{\pi \left(1-H\right) - 2d\ln \left(H\right)}{\left(1-H\right) 2\ln \left(H\right)}.
 \end{array}
+\qquad(2.17)
 $$
-<p>Для (2.16)
+</li>
+<li>
+<p>Выражение для \(Q_{\gamma}\)
 </p>
 $$
+\displaystyle
 \begin{array}l
-p_{\Gamma} = \dfrac{A}{B}, \\
-A = \dfrac{d}{(1-H)} - \dfrac{\pi}{2\ln(H)} + \dfrac{L(1-\alpha) \theta \pi}{2 \ln(H)}, \\
-B = \theta_f (I_d - I_1) + \dfrac{d}{(1-H)}- \dfrac{\pi}{2\ln(H)} + \dfrac{L(1-\alpha) \theta \pi}{2 \ln(H)} + 
-\dfrac{L \alpha \pi H}{2 (H - r_w)}
+Q_{\gamma} = Q_{{\gamma}_1} + Q_{\gamma_2} =  \dfrac{\pi \theta d p_{\Gamma} }{2\ln(H/r_w)} + 
+\dfrac{\pi \theta H r_w p_{\Gamma} }{2(H - r_w)} = \\ \\
+= \pi \theta p_{\Gamma}\left[\dfrac{d}{2\ln(H/r_w)} + 
+\dfrac{H r_w }{2(H - r_w)} \right] \\ \\ 
+Q_{\gamma} = \pi \theta p_{\Gamma} B, \;\;\; B = \dfrac{d}{2\ln(H/r_w)} + \dfrac{H r_w }{2(H - r_w)}
 \end{array}
+\qquad(2.18)
 $$
+</li>
+</ol>
+<p>Тогда уравнение для \(p_{\Gamma}\) с учетом (2.14), (2.17) и (2.18)
+</p>
+$$
+\displaystyle
+\begin{array}l
+p_{\Gamma} = \dfrac{A \cdot p_{\Gamma} - A - \pi \theta p_{\Gamma} B}{\theta_f \left(I_d - I_1\right)} \\ \\ 
+p_{\Gamma} = \dfrac{-A}{\theta_f \left(I_d - I_1\right) - A + \pi \theta B}
+\end{array}
+\qquad(2.19)
+$$
+<details>
+<summary>Вычисление \(p_{\Gamma}\) в Maxima</summary>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>(<span style="color:#f92672">%</span>i272)	q_G1(pg)  <span style="color:#f92672">:=</span>  (<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>pg) <span style="color:#f92672">*</span> d <span style="color:#f92672">/</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span>H)<span style="color:#960050;background-color:#1e0010">$</span>
+</span></span><span style="display:flex;"><span>	q_G2(pg) <span style="color:#f92672">:=</span> <span style="color:#f92672">%</span>pi <span style="color:#f92672">*</span> (pg <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">/</span>(<span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> log(H))<span style="color:#960050;background-color:#1e0010">$</span>
+</span></span><span style="display:flex;"><span>	q(pg) <span style="color:#f92672">:=</span> q_G1(pg) <span style="color:#f92672">+</span> q_G2(pg)<span style="color:#960050;background-color:#1e0010">$</span>
+</span></span><span style="display:flex;"><span>	q_gam1(pg)  <span style="color:#f92672">:=</span> (<span style="color:#f92672">%</span>pi <span style="color:#f92672">*</span> d <span style="color:#f92672">*</span> pg <span style="color:#f92672">*</span> theta) <span style="color:#f92672">/</span> (<span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> log(H<span style="color:#f92672">/</span>rw))<span style="color:#960050;background-color:#1e0010">$</span>
+</span></span><span style="display:flex;"><span>	q_gam2(pg) <span style="color:#f92672">:=</span> (<span style="color:#f92672">%</span>pi <span style="color:#f92672">*</span>  pg <span style="color:#f92672">*</span> H <span style="color:#f92672">*</span> rw <span style="color:#f92672">*</span> theta) <span style="color:#f92672">/</span> (<span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> (H <span style="color:#f92672">-</span> rw))<span style="color:#960050;background-color:#1e0010">$</span>
+</span></span><span style="display:flex;"><span>	q_gam(pg) <span style="color:#f92672">:=</span> q_gam1(pg) <span style="color:#f92672">+</span> q_gam2(pg)<span style="color:#960050;background-color:#1e0010">$</span>
+</span></span><span style="display:flex;"><span>	solve(pg <span style="color:#f92672">=</span> (q(pg) <span style="color:#f92672">-</span> q_gam(pg)) <span style="color:#f92672">/</span>(theta_f <span style="color:#f92672">*</span> (I_d <span style="color:#f92672">-</span> I_1)), pg);
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>(<span style="color:#f92672">%</span>o272)	[pg<span style="color:#f92672">=-</span>(((<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>log(H)<span style="color:#f92672">*</span>d<span style="color:#f92672">+%</span>pi<span style="color:#f92672">*</span>H<span style="color:#f92672">-%</span>pi)<span style="color:#f92672">*</span>log(H<span style="color:#f92672">/</span>rw)<span style="color:#f92672">*</span>rw<span style="color:#f92672">+</span>(<span style="color:#f92672">-</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>H<span style="color:#f92672">*</span>log(H)<span style="color:#f92672">*</span>d)<span style="color:#f92672">-%</span>pi<span style="color:#f92672">*</span>H<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span><span style="color:#f92672">+%</span>pi<span style="color:#f92672">*</span>H)<span style="color:#f92672">*</span>log(H<span style="color:#f92672">/</span>rw))<span style="color:#f92672">/</span>((((<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>H<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">*</span>log(H)<span style="color:#f92672">*</span>I_d<span style="color:#f92672">+</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">-</span><span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>H)<span style="color:#f92672">*</span>log(H)<span style="color:#f92672">*</span>I_1)<span style="color:#f92672">*</span>log(H<span style="color:#f92672">/</span>rw)<span style="color:#f92672">*</span>rw<span style="color:#f92672">+</span>((<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>H<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>H<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">*</span>log(H)<span style="color:#f92672">*</span>I_d<span style="color:#f92672">+</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>H<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span><span style="color:#f92672">-</span><span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>H)<span style="color:#f92672">*</span>log(H)<span style="color:#f92672">*</span>I_1)<span style="color:#f92672">*</span>log(H<span style="color:#f92672">/</span>rw))<span style="color:#f92672">*</span>theta_f<span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>(((<span style="color:#f92672">%</span>pi<span style="color:#f92672">*</span>H<span style="color:#f92672">-%</span>pi<span style="color:#f92672">*</span>H<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">*</span>log(H)<span style="color:#f92672">*</span>log(H<span style="color:#f92672">/</span>rw)<span style="color:#f92672">+</span>(<span style="color:#f92672">%</span>pi<span style="color:#f92672">*</span>H<span style="color:#f92672">-%</span>pi)<span style="color:#f92672">*</span>log(H)<span style="color:#f92672">*</span>d)<span style="color:#f92672">*</span>rw<span style="color:#f92672">+</span>(<span style="color:#f92672">%</span>pi<span style="color:#f92672">*</span>H<span style="color:#f92672">-%</span>pi<span style="color:#f92672">*</span>H<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">*</span>log(H)<span style="color:#f92672">*</span>d)<span style="color:#f92672">*</span>theta<span style="color:#f92672">+</span>(<span style="color:#f92672">-</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>log(H)<span style="color:#f92672">*</span>d)<span style="color:#f92672">-%</span>pi<span style="color:#f92672">*</span>H<span style="color:#f92672">+%</span>pi)<span style="color:#f92672">*</span>log(H<span style="color:#f92672">/</span>rw)<span style="color:#f92672">*</span>rw<span style="color:#f92672">+</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>H<span style="color:#f92672">*</span>log(H)<span style="color:#f92672">*</span>d<span style="color:#f92672">+%</span>pi<span style="color:#f92672">*</span>H<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span><span style="color:#f92672">-%</span>pi<span style="color:#f92672">*</span>H)<span style="color:#f92672">*</span>log(H<span style="color:#f92672">/</span>rw)))]
+</span></span></code></pre></div></details>
+<h3 id="замечания">Замечания</h3>
+<ol>
+<li>Если считать, что \(M \rightarrow \infty \), тогда \(p_f = 0\) из (2.3) с учетом граничных условий (2.4). Следовательно,
+\(I_1\) = 0.</li>
+<li>Если нет притока к торцам, то \(Q_{G_2} = 0\) и \(Q_{\gamma_2} = 0\). Значит в формуле (2.19) \(A = \dfrac{d}{H-1}\),
+\(B = \dfrac{d}{2\ln(H/r_w)}\)</li>
+</ol>
+<h3 id="некоторые-выкладки">Некоторые выкладки</h3>
 </div>
-<p>You can emphasize text using <em>italic</em> or <strong>bold</strong> styles.</p>
-<h2 id="quotes">Quotes</h2>
-<p>Markdown allows you to include block quotes. Here&rsquo;s an example:</p>
-<blockquote>
-<p>&ldquo;The only way to do great work is to love what you do.&rdquo; - Steve Jobs</p>
-</blockquote>
-<h2 id="tables">Tables</h2>
-<p>Markdown supports tables. Here&rsquo;s an example:</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Age</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>John</td>
-<td>25</td>
-</tr>
-<tr>
-<td>Jane</td>
-<td>30</td>
-</tr>
-<tr>
-<td>Michael</td>
-<td>35</td>
-</tr>
-</tbody>
-</table>
-<p>That&rsquo;s all for now. Happy formatting with Markdown!</p>
 </div></div><footer>
     <hr>
     <div class="footer-text">

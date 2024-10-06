@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Форм-Фактор on База знаний</title>
+    <link>//localhost:1313/tags/%D1%84%D0%BE%D1%80%D0%BC-%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80/</link>
+    <description>Recent content in Форм-Фактор on База знаний</description>
+    <generator>Hugo</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Sat, 20 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/%D1%84%D0%BE%D1%80%D0%BC-%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Как вычислять форм-фактор C_A</title>
+      <link>//localhost:1313/common/calc_c_a/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/common/calc_c_a/</guid>
+      <description>Взято из статьи Guo, Evans (1993)&#xA;Table 1. Additional Shape Facters a/h exact for \(t_{DA}\) &gt; \(C_A\) 30.811.4948 40.955.3790 61.00.9935 71.00.4068 81.00.1631 92.06.44E-2 102.02.51E-2 112.09.69E-3 122.03.71E-3 132.01.41E-3 143.05.33E-4 153.02.00E-4 163.07.50E-5 173.02.8E-5 183.01.04E-5 194.03.85E-6 204.01.42E-6 256.09.46E-9 298.01.66E-12 4010.02.28E-18 6718.02.01E-27 Рис. 1&#xA;Что такое \(t_{DA}\) в статье не расскрывается и встречается оно только в заголовке этой таблицы. Поэтому на него не будет обращать внимания.&#xA;Значение \(C_A\) будем определять линейно между соседними значениями, если нужно нам значения \(a/h\) нет в таблице.</description>
+    </item>
+  </channel>
+</rss>

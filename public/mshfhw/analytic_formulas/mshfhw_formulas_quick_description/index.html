@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Краткое описание аналитических формул оценки дебита ГС с МГРП | База знаний</title>
+<meta name="robots" content='noindex, nofollow'>
+<meta name="description" content="">
+<meta name="generator" content="hugo-index">
+<link crossorigin="anonymous" href="//localhost:1313/assets/stylesheet.css" rel="preload stylesheet" as="style">
+<script crossorigin="anonymous" src="//localhost:1313/assets/quicklink.js" rel="preload" as="script"></script>
+<script>
+    window.addEventListener('load', () => {
+        quicklink.listen();
+    });
+</script>
+
+</head>
+
+<body><header>
+  <h1>
+    <a href="//localhost:1313/">
+      
+      <span>База знаний</span>
+    </a>
+    <span class="hl">/</span>
+    <a href="//localhost:1313/mshfhw/analytic_formulas/mshfhw_formulas_quick_description/">
+      <span>Краткое описание аналитических формул оценки дебита ГС с МГРП</span>
+    </a>
+  </h1>
+  <p class="desc"></p>
+</header>
+<div class="main">
+
+<ul class="tagsList single">
+  
+  <li><a href="//localhost:1313/tags/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0/">Аналитическая Формула</a></li>
+  
+  <li><a href="//localhost:1313/tags/%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B0-%D0%B4%D0%B5%D0%B1%D0%B8%D1%82%D0%B0/">Оценка Дебита</a></li>
+  
+  <li><a href="//localhost:1313/tags/%D0%B3%D1%81/">ГС</a></li>
+  
+  <li><a href="//localhost:1313/tags/%D0%BC%D0%B3%D1%80%D0%BF/">МГРП</a></li>
+  
+</ul>
+
+<div class="content"><table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Picture</th>
+      <th>Description</th>
+      <th>Formula</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href ="../analytic_formulas/economides_1991">Mukherjee, Economides (1991)</a></td>
+      <td><figure><img src="/mshfhw/analytic_formulas/image_economides_1991_1.png">
+</figure>
+</td>
+      <td>
+        Область решения: прямоугольный параллелепипед. Скважина находится в центре, трещины ортогональны оси скважины. Трещины бесконечной проницаемости. 
+      </td>
+      <td>
+      $$
+        \begin{array}l
+            q_f = \dfrac{2 k_{H} \left(2 x_f h\right)\triangle p}{\mu B x} \\
+            x = \dfrac{L}{2\left(n-1\right)} \\
+            \triangle p = ???
+        \end{array}
+        % \qquad(1)
+      $$
+      </td>
+    </tr>
+    <tr>
+      <td><a href ="../analytic_formulas/guo_2009">Guo (2009)</a></td>
+      <td><figure><img src="/mshfhw/analytic_formulas/image_guo_2009_1.png">
+</figure>
+</td>
+      <td>
+        Область: окружность радиуса \(r_{L}\).
+        \(\bar{z_e}\) -- половина среднего расстояния между трещинами
+      </td>
+      <td>
+      $$
+        \begin{array}l
+            q = \dfrac{1}{ \dfrac{1}{J_R} + \dfrac{1}{J_L} + \dfrac{1}{J_r} } \left(\bar{p} - p_w\right) \\
+            J_R = \dfrac{2 \pi k_H h}{\mu B \left(\dfrac{1}{2} \ln\left(\dfrac{4A}{\gamma C_A r_L^2}\right) \right)} \\
+            J_L = \sum_{i=1}^n \dfrac{4 k_H h}{\mu B z_{e_i} \sqrt{c_i}} \left(1 - e^{-\sqrt{c_i} x_{f_i}}\right)\\
+            J_r = \sum_{i=1}^n \dfrac{\pi k_{fwi} w_{wi}}{6 \mu B \left[\ln\left(\dfrac{h}{2r_{wi}}\right) + \pi - \left( 1.224 - s_i - Dq\right)\right]} \\
+            c_i = \dfrac{24 k_h}{z_{e_i}w_i k_{f_i}} \\
+            r_L = \sqrt{\dfrac{4 n \bar{z_e} \bar{x_f}}{\pi}}
+        \end{array}
+        % \qquad(1)
+      $$
+      </td>
+    </tr>
+    <tr>
+      <td><a href ="../analytic_formulas/hujun_li_1996">Hujun, Li (1996)</a></td>
+      <td><figure><img src="/mshfhw/analytic_formulas/image_hujin_li_1996_1.png">
+</figure>
+</td>
+      <td>
+      Описание
+      </td>
+      <td>
+      $$
+        \begin{array}l
+          Q_i = \dfrac{2\pi k h \left(p_r - p_w\right)}{\mu} \cdot \dfrac{1}{A} \\
+          A = \dfrac{\pi \left(L^* - x_f\right)}{\left({L_f}_1 + {L_f}_2\right)} + 
+              \dfrac{\pi}{x_f \left(\dfrac{1}{{L_f}_1} + \dfrac{1}{{L_f}_2} \right)} + \\
+              \dfrac{\pi x_f k}{k_f w} +
+              \dfrac{k h}{k_f w} \left( \ln \dfrac{h}{2r_w} - \dfrac{\pi}{2}\right)
+        \end{array}
+      $$
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="внешний-контур-прямоугольный-параллелепипед">Внешний контур: прямоугольный параллелепипед</h3>
+<h4 id="a-href-analytic_formulaseconomides_1991mukherjee-economides-1991a"><a href ="../analytic_formulas/economides_1991">Mukherjee, Economides (1991)</a></h4>
+<center>
+<figure><img src="/mshfhw/analytic_formulas/image_economides_1991_1.png"
+    alt="Рис.1" width="300"><figcaption>
+      <p>Рис.1</p>
+    </figcaption>
+</figure>
+
+</center>
+<p>Скважина находится в центре, трещины ортогональны оси скважины.
+Трещины бесконечной проницаемости.</p>
+$$
+        \begin{array}l
+            q_f = \dfrac{2 k_{H} \left(2 x_f h\right)\triangle p}{\mu B x} \\
+            x = \dfrac{L}{2\left(n-1\right)} \\
+            \triangle p = ???
+        \end{array}
+        % \qquad(1)
+$$
+<h4 id="a-href-analytic_formulashujun_li_1996hujun-li-1996a"><a href ="../analytic_formulas/hujun_li_1996">Hujun, Li (1996)</a></h4>
+<center><figure><img src="/mshfhw/analytic_formulas/images/image_hujin_li_1996_1.png"
+    alt="Рис.2" width="300"><figcaption>
+      <p>Рис.2</p>
+    </figcaption>
+</figure>
+</center>
+$$
+  \begin{array}l
+    Q_i = \dfrac{2\pi k h \left(p_r - p_w\right)}{\mu} \cdot \dfrac{1}{A} \\ \\
+    A = \dfrac{\pi \left(L^* - x_f\right)}{\left({L_f}_1 + {L_f}_2\right)} + 
+        \dfrac{\pi}{x_f \left(\dfrac{1}{{L_f}_1} + \dfrac{1}{{L_f}_2} \right)} + 
+        \dfrac{\pi x_f k}{k_f w} +
+        \dfrac{k h}{k_f w} \left( \ln \dfrac{h}{2r_w} - \dfrac{\pi}{2}\right)
+  \end{array}
+$$
+<h3 id="внешний-контур--окружность">Внешний контур : окружность</h3>
+<h4 id="a-href-analytic_formulasguo_2009guo-2009a"><a href ="../analytic_formulas/guo_2009">Guo (2009)</a></h4>
+<center> <figure><img src="/mshfhw/analytic_formulas/image_guo_2009_1.png"
+    alt="Рис.3" width="300"><figcaption>
+      <p>Рис.3</p>
+    </figcaption>
+</figure>
+ </center>
+<p>Область: окружность радиуса \(r_{L}\).</p>
+<p>\(\bar{z_e}\) &ndash; половина среднего расстояния между трещинами</p>
+$$
+  \begin{array}l
+      q = \dfrac{1}{ \dfrac{1}{J_R} + \dfrac{1}{J_L} + \dfrac{1}{J_r} } \left(\bar{p} - p_w\right) \\
+      J_R = \dfrac{2 \pi k_H h}{\mu B \left(\dfrac{1}{2} \ln\left(\dfrac{4A}{\gamma C_A r_L^2}\right) \right)} \\
+      J_L = \sum_{i=1}^n \dfrac{4 k_H h}{\mu B z_{e_i} \sqrt{c_i}} \left(1 - e^{-\sqrt{c_i} x_{f_i}}\right)\\
+      J_r = \sum_{i=1}^n \dfrac{\pi k_{fwi} w_{wi}}{6 \mu B \left[\ln\left(\dfrac{h}{2r_{wi}}\right) + \pi - \left( 1.224 - s_i - Dq\right)\right]} \\
+      c_i = \dfrac{24 k_h}{z_{e_i}w_i k_{f_i}} \\
+      r_L = \sqrt{\dfrac{4 n \bar{z_e} \bar{x_f}}{\pi}}
+  \end{array}
+  % \qquad(1)
+$$
+</div></div><footer>
+    <hr>
+    <div class="footer-text">
+        <div>© 2024 База знаний</div>
+        <div>Powered by <a href="https://gohugo.io/">Hugo</a> & <a
+                href="https://github.com/adityatelange/hugo-index/">Index</a></div>
+    </div>
+</footer>
+</body>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+
+
+
+
+</html>

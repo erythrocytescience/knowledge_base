@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guo on База знаний</title>
+    <link>//localhost:1313/tags/guo/</link>
+    <description>Recent content in Guo on База знаний</description>
+    <generator>Hugo</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Sat, 20 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/guo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guo 1993. Inflow Performance of a Horizontal Well Intersecting Natural Fractures</title>
+      <link>//localhost:1313/mshfhw/analytic_formulas/compressible/guo_1993/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/mshfhw/analytic_formulas/compressible/guo_1993/</guid>
+      <description>Детали авторы: Genliang Guo and A.D. Evans Название: Inflow Performance of a Horizontal Well Intersecting Natural Fractures год: 1993 doi: Cсылка [!WARNING] УПРУГИЙ РЕЖИМ!!!&#xA;Аннотация Рассматриваются аналитические однофазная и многофазная псевдостационарные модели для определения продуктивности горизонтальной скважины (ГС) с трещинами (натуральными). Однофазная модель состоит из комбинации псевдостационарного течения к ГС в однородном пласте&#xA;и течения к трещине (в некоторой области). Учитываются эффекты от анизотропии проницаемости, расположения ствола ГС и характеристик трещин.</description>
+    </item>
+    <item>
+      <title>Guo 1997. A Simple and rigorous mathematical model for estimating inflow performance of wells intersecting long fractures</title>
+      <link>//localhost:1313/mshfhw/analytic_formulas/guo_1997/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/mshfhw/analytic_formulas/guo_1997/</guid>
+      <description>Аннотация В данной статье представлена простая и более строгая математическая модель для оценки продуктивности вертикальных и горизонтальных скважин, пересеченных трещинами, полностью вскрывающими участок пласта. Важной особенностью новой модели является то, что она позволяет строго сопрягать течение в пласте и в в трещинах. Распределение давление в трещинах последовательно используется и для течения в пласте, и для течения в трещине. Другой особенностью является то, что эту модель легко использовать, потому что уравнения, содержащиеся в ней, имеют простую форму.</description>
+    </item>
+    <item>
+      <title>Guo 2009. A Simple Analytical Model for Predicting Productivity of Multifractured Horizontal Wells</title>
+      <link>//localhost:1313/mshfhw/analytic_formulas/guo_2009/</link>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/mshfhw/analytic_formulas/guo_2009/</guid>
+      <description>Детали Авторы: Boyun Guo, Xiance Yu, Mohammad Khoshgahdam Название: A Simple Analytical Model for Predicting Productivity of Multifractured Horizontal Wells год: 2009 doi: Cсылка Обзор литературы, введение. Авторы утверждают, что нет простых и точных математических моделей для оценки дебита нефтяных горизонтальных скважин. Существующие аналитические модели не дают необходимой точности для расчета дебита. Модель состоит из радиального течения вне областей без трещин, линейный приток к берегам трещин в зоне трещин, линейной поток в трещинах и радиальный поток в трещинах к скважине.</description>
+    </item>
+  </channel>
+</rss>

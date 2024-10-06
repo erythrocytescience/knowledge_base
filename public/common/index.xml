@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commons on База знаний</title>
+    <link>//localhost:1313/common/</link>
+    <description>Recent content in Commons on База знаний</description>
+    <generator>Hugo</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Sun, 21 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/common/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Перевод в систему СИ</title>
+      <link>//localhost:1313/common/si_metric_conversion_factor/</link>
+      <pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/common/si_metric_conversion_factor/</guid>
+      <description> СИ 1 м\(3.048 \cdot 10^{-1}\) фут 1 мПа * с1 сП </description>
+    </item>
+    <item>
+      <title>Как вычислять форм-фактор C_A</title>
+      <link>//localhost:1313/common/calc_c_a/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/common/calc_c_a/</guid>
+      <description>Взято из статьи Guo, Evans (1993)&#xA;Table 1. Additional Shape Facters a/h exact for \(t_{DA}\) &gt; \(C_A\) 30.811.4948 40.955.3790 61.00.9935 71.00.4068 81.00.1631 92.06.44E-2 102.02.51E-2 112.09.69E-3 122.03.71E-3 132.01.41E-3 143.05.33E-4 153.02.00E-4 163.07.50E-5 173.02.8E-5 183.01.04E-5 194.03.85E-6 204.01.42E-6 256.09.46E-9 298.01.66E-12 4010.02.28E-18 6718.02.01E-27 Рис. 1&#xA;Что такое \(t_{DA}\) в статье не расскрывается и встречается оно только в заголовке этой таблицы. Поэтому на него не будет обращать внимания.&#xA;Значение \(C_A\) будем определять линейно между соседними значениями, если нужно нам значения \(a/h\) нет в таблице.</description>
+    </item>
+    <item>
+      <title>Формула линейной интерполяции</title>
+      <link>//localhost:1313/common/linear_interpolation/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/common/linear_interpolation/</guid>
+      <description>$$&#xA;y = y_0 + (x - x_0) \cdot \dfrac{(y_1 - y_0)}{(x_1 - x_0)}&#xA;$$</description>
+    </item>
+    <item>
+      <title>Greek letter in Inkscape text</title>
+      <link>//localhost:1313/common/inkscape_greek_letter/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/common/inkscape_greek_letter/</guid>
+      <description>To get the greek letter entered into Inkscape do the following:&#xA;Press F8 to get to text mode. Click with mouse on the canvas (Inkscape lingo for page) where you want your text. You will now have the text cursor on the canvas. Press Ctrl U to get into unicode entry mode. The status line at the bottom of the Inkscape window will now show &amp;ldquo;Unicode (enter to finish)&amp;rdquo;. Type 03bc which is the unicode for the µ character, then press Enter (Return), if everything went well you will now have the µ character on the canvas.</description>
+    </item>
+  </channel>
+</rss>

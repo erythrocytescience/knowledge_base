@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Guo 2009. A Simple Analytical Model for Predicting Productivity of Multifractured Horizontal Wells | База знаний</title>
+<meta name="robots" content='noindex, nofollow'>
+<meta name="description" content="">
+<meta name="generator" content="hugo-index">
+<link crossorigin="anonymous" href="//localhost:1313/assets/stylesheet.css" rel="preload stylesheet" as="style">
+<script crossorigin="anonymous" src="//localhost:1313/assets/quicklink.js" rel="preload" as="script"></script>
+<script>
+    window.addEventListener('load', () => {
+        quicklink.listen();
+    });
+</script>
+
+</head>
+
+<body><header>
+  <h1>
+    <a href="//localhost:1313/">
+      
+      <span>База знаний</span>
+    </a>
+    <span class="hl">/</span>
+    <a href="//localhost:1313/mshfhw/analytic_formulas/guo_2009/">
+      <span>Guo 2009. A Simple Analytical Model for Predicting Productivity of Multifractured Horizontal Wells</span>
+    </a>
+  </h1>
+  <p class="desc"></p>
+</header>
+<div class="main">
+
+<ul class="tagsList single">
+  
+  <li><a href="//localhost:1313/tags/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0/">Аналитическая Формула</a></li>
+  
+  <li><a href="//localhost:1313/tags/guo/">Guo</a></li>
+  
+  <li><a href="//localhost:1313/tags/%D0%B3%D1%81/">ГС</a></li>
+  
+  <li><a href="//localhost:1313/tags/%D0%BC%D0%B3%D1%80%D0%BF/">МГРП</a></li>
+  
+  <li><a href="//localhost:1313/tags/%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B0-%D0%B4%D0%B5%D0%B1%D0%B8%D1%82%D0%B0/">Оценка Дебита</a></li>
+  
+</ul>
+
+<div class="content"><details>
+<summary>Детали</summary>
+<dl>
+    <dt>Авторы:</dt>
+    <dd>Boyun Guo, Xiance Yu, Mohammad Khoshgahdam</dd>
+    <dt>Название:</dt>
+    <dd>A Simple Analytical Model for Predicting Productivity of Multifractured Horizontal Wells</dd>
+    <dt>год:</dt>
+    <dd>2009</dd>
+    <dt>doi:</dt>
+    <dd><a href ="https://doi.org/10.2118/114452-PA">Cсылка</a></dd>
+</dl>
+</details>
+<h3 id="обзор-литературы-введение">Обзор литературы, введение.</h3>
+<p align="justify">
+Авторы утверждают, что нет простых и точных математических моделей для 
+оценки дебита нефтяных горизонтальных скважин. Существующие аналитические модели
+не дают необходимой точности для расчета дебита. 
+</p>
+<p align="justify">
+Модель состоит из радиального течения вне областей без трещин, линейный приток 
+к берегам трещин в зоне трещин, линейной поток в трещинах и радиальный поток в трещинах к скважине.
+Данная модель описывает псевдостационарное течение флюида в участке пласта любой формы, с зоной расположенных 
+в любом месте пласта. Разница между дебитом, полученным по модели и актуальным данным не более 5% в рассматриваемых случаях. 
+</p>
+<p align="justify">
+Giger (1984) предложил первую модель для анализа продуктивности ГС, пересеченную трещинами. Данная модель не строго 
+согласует (соединяет) течения в пласте и в трещинах. 
+</p>
+<p align="justify">
+Karchar (1986), Soliman (1990) адаптировали модель Giger для использования в своих численных симуляторах. 
+Mukherjee, Economides (1991) разработали упрощенную модель, основанную на модели Joshi (1988) и корреляции безразмерного 
+радиуса скважина (Prats).
+</p>
+<p align="justify">
+Raghavan, Joshi (1993) показали мат.модель оценки продуктивности ГС с несколькими трансверсальными трещинами. 
+Модель использует эффективный радиус ствола скважины для моделирования притока к ГС с ГРП. Течение внутри трещин не учитывается. 
+</p>
+<p align="justify">
+Wan, Aziz (2002) представили полуаналитическую модель. 
+Более практически значимые модели были представлены Li (1996) и Wei, Economides (2005), которые учитывают (совмещают, объединяют) линейное течение в пласте, линейное течение в трещине и радиальное течение в трещине. 
+</p>
+<p>Guo, Schechter (1997) представили строгую (точную) математическую модель, связывающих линейное течение в пласте и линейное течение
+в трещинах. Радиальное течение в трещинах не учитывается.
+Ни одна из этих моделей не учитывает (соединяет) 4 течения : радиальное в пласте, линейное в пласте, линейное в трещинах и радиальное в трещинах.</p>
+<p>Поэтому в этой статье представлена всесторонняя и в то же время простая модель для оценки продуктивности ГС с несколькими трещинами.</p>
+<p>На рис. 1 представлена область дренирования ГС с МГРП. Это область состоит из двух частей. Внутренний регион, который содержит в себе трещины и внешний &ndash; не содержащий трещины.</p>
+<figure><img src="/mshfhw/analytic_formulas/images/image_guo_2009_1.png"
+    alt="Рис. 1. Область решения задачи о притоке жидкости к горизонтальной скважине"><figcaption>
+      <p>Рис. 1. Область решения задачи о притоке жидкости к горизонтальной скважине</p>
+    </figcaption>
+</figure>
+
+<p>Зона вокруг и внутри трещин тоже может быть разделена на две подобласти (рис. 2.).</p>
+<figure><img src="/mshfhw/analytic_formulas/images/image_guo_2009_2.png"
+    alt="Рис. 2"><figcaption>
+      <p>Рис. 2</p>
+    </figcaption>
+</figure>
+
+<p>Далее гугл-перевод:</p>
+<blockquote>
+<p>Внескважинная область собирает флюиды из пласта.
+Призабойная зона транспортирует собранные флюиды в
+горизонтальный ствол скважины. Логично полагать, что следующее
+Факторы определяют долгосрочную продуктивность множественных трещин
+горизонтальная скважина:</p>
+</blockquote>
+<ul>
+<li>(а) Эффективность транспорта жидкости в пределах дренажной границы: от (внешней области) до раздробленной области (внутренней области) резервуар;</li>
+<li>(б) Эффективность транспорта жидкости в области трещины (внутренняя область) до переломов;</li>
+<li>(c) Эффективность транспорта жидкости в удалении от ствола скважины от области трещины до призабойной области</li>
+<li>(г) Эффективность транспорта жидкости в призабойной зоне в горизонтальный ствол скважины</li>
+<li>(д) Эффективность транспорта жидкости в области трещины (внутренняя область) пласта непосредственно к стволу ГС.</li>
+</ul>
+<blockquote>
+<p>В низкопроницаемых коллекторах влияние последнего фактора на скважину
+производительность может быть незначительной. Для математической простоты
+для оценки остальных четырех сделаны следующие предположения:
+факторы:</p>
+</blockquote>
+<ul>
+<li>Радиальный поток в границах дренажа к трещиноватому район водоема (радиальный поток водоема)</li>
+<li>Линейный поток между трещинами в пласте к трещине забои (линейный поток пласта)</li>
+<li>Линейный поток по трещине в призабойную область (ГРП) линейный поток</li>
+<li>Радиальный поток в призабойной зоне</li>
+</ul>
+<p><em>Судя по приведенным предположениям, скважина не перфорирована, кроме участков соприкосновения с трещинами.</em></p>
+<h3 id="нефтяная-скважина">Нефтяная скважина.</h3>
+<p>Представим псевдостационарное радиальное течение во внешней области пласта.
+Полный поток нефти может быть описан</p>
+$$
+q = \dfrac{2 \pi k_H h \left(\bar{p}- p_L\right)}{\mu_o \left( \dfrac{1}{2} \ln \dfrac{4A}{\gamma C_A r_L^2} \right)},
+\qquad(1)
+$$
+<p>
+где \(p_L\) &ndash; давление на границe между внутренней и внешней областями, \(r_L\) &ndash; эквивалентный внешний радиусе внутренней области, \(\gamma\) = 1.78. Значение \(r_L\) может быть приблизительно получено</p>
+$$
+r_L = \sqrt{ \dfrac{4n \bar{z_e}\bar{x_f}}{\pi} }
+\qquad(2)
+$$
+<p>Если скважина с множественными трещинами дренирует участок пласта с физическими непроницаемыми границами, тогда форм-фактор области дренирования \(C_A\) может быть определено на основе формы области пласта и местоположения внутренней области на участке пласта. Если скважина с множественными трещинами эксплуатируется на участке непрерывныго пласта, тогда форм-фактор \(C_A\) определяется на основе формы области дренирования и местоположения внутренней области в центре области дренирования. Соотношение сторон (длина к ширине) области дренирования может быть вычислено как</p>
+$$
+ah = \dfrac{n \bar{z_e}}{\bar{x_f}}.
+\qquad(2a)
+$$
+<!-- [Подробнее о вычислении \(C_A\)](/common/calc_c_a.md) -->
+<p><a href ="/common/calc_c_a">Подробнее о вычислении \(C_A\)</a></p>
+<p>Линейное течение в пласте и линейной течение в трещинах независимы. Guo и Schecter (1997) показали кросс модель &ldquo;пласт-трещина&rdquo;, соединяющую линейно течение в пласте и в трещине. Модель течения показана на рис. 2. В соответствии с
+этой модели для равномерно распределенных трещин дебит жидкости n трещин выражается как:</p>
+$$
+q = \sum_{i=1}^n \dfrac{4 k_H h \left(p_L - p_r\right) }{\mu z_{e_i} \sqrt{c_i}} \left(1 - e^{-\sqrt{c_i} x_{f_i}}\right),
+\qquad(3)
+$$
+<p>
+где
+</p>
+$$
+c_i = \dfrac{24k_H}{ z_{ei} w_i k_{fi}},
+\qquad (3a)
+$$
+<p>
+где \(z_{ei}\) &ndash; полурасстояние между \(i\)-ой \(i+1\)-ой трещинами.</p>
+<p>Линейная/радиальная модель Furui (2003)[2] может быть использована для сопряжения линейного потока в трещине и радиального потока в трещине в окрестности ствола скважины. Согласно этой модели, приток к скважине из \(n\) равномерно распределенных трещин выражается как</p>
+$$
+q = \sum_{i=1}^n \dfrac{\pi k_{fi} w_{i} \left(p_r - p_w\right) }{6 \mu \left[\ln\left(\dfrac{h}{2r_{w}}\right) + \pi - \left( 1.224 - s_i - Dq\right)\right]},
+\qquad(4)
+$$
+<p>
+где \(p_w\) давление на скважине (постоянное), \(k_f\) &ndash; проницаемость трещины, \(w\) &ndash; ширина раскрытия трещины. Последние два параметра и коэффициент течение, не подчиняющегося закону Дарси, \(D\) могут быть использованы для трещин конечной (или ухудшенной) проводимости.</p>
+<p>Комбинируя уравнения (1)-(4), получим формулу для полного дебита</p>
+$$
+\begin{array}l
+q = \dfrac{1}{ \dfrac{1}{J_R} + \dfrac{1}{J_L} + \dfrac{1}{J_r} } \left(\bar{p} - p_w\right) \\ \\
+J_R = \dfrac{2 \pi k_H h}{\mu \left(\dfrac{1}{2} \ln\left[\dfrac{4A}{\gamma C_A r_L^2}\right] \right)} \\ \\
+J_L = \sum_{i=1}^n \dfrac{4 k_H h}{\mu z_{e_i} \sqrt{c_i}} \left(1 - e^{-\sqrt{c_i} x_{f_i}}\right) \\ \\
+J_r = \sum_{i=1}^n \dfrac{\pi k_{fi} w_{i}}{6 \mu B \left[\ln\left(\dfrac{h}{2r_{w}}\right) + \pi - \left( 1.224 - s_i - Dq\right)\right]}
+\end{array}
+\qquad(5)
+$$
+<p>Первое уравнение из (5) подходит только для однофазного притока, в котором забойное давление выше давления насыщения нефти.
+Из этого же уравнения видно, что продуктивности ГС с множественными трещинами определяется проводимостями \(J_R, J_L, J_r\). Вообще говоря, эти три параметра не принимают одинаковый порядок (или одинаковые значения) значений, поэтому продуктивность определяется наименьшим из них.  Это означает, что одна из проводимостей будет лимитирующей. Анализ масштаб величин этих параметров позволяет оптимизовать параметры скважины для увеличения продуктивности скважины и снижения затрат на ее эксплуатацию.</p>
+<h3 id="особенности-формулы-и-постановки-задачи">Особенности формулы и постановки задачи</h3>
+<p>Предположим, что область дренирования скважины с множественными трещинами это окружность радиуса \(r_L\) (см. рис. 1.)</p>
+<p>Согласно рис. 3 для того, чтобы три трещины со средней полурасстояние между ними равным 100м, находились внутри окружности, радиус которой определяется формулой (2), средняя их полудлина должна быть не больше
+360 м (примерно). Данный критерий удовлетворяется для трещин с параметрами из табл. 1.
+Хотя на рис. 2 одна трещина выходит за границы области дренирования. Непонятно насколько это критично и как такое моделировать численно.</p>
+<figure><img src="/mshfhw/analytic_formulas/images/image_guo_2009_3.png"
+    alt="Рис. 3"><figcaption>
+      <p>Рис. 3</p>
+    </figcaption>
+</figure>
+
+<p>\(J_R\) может быть отрицательным, если
+</p>
+$$
+\dfrac{4A}{\gamma C_A r_L^2} < 1
+$$
+<p>
+Допустим \(A = \pi \cdot r_L^2 \), тогда \(J_R\) отрицательный, если
+</p>
+$$
+C_A > \dfrac{4 \pi}{\gamma} = 7.06
+\qquad(6)
+$$
+<p>Согласно этой <a href ="/common/calc_c_a">таблицы</a>, \(C_A\) принимает значения 7.06 и выше, если \(a / h > 3.724 \)
+(<a href ="/common/linear_interpolation">линейная интерполяция</a>).</p>
+<p>В данном случае, с учетом (2a), имеем
+</p>
+$$
+n \cdot \bar{z_e} > 3.724 \cdot \bar{x_f}
+$$
+<p>
+То есть при 4-х трещинах, среднее полурасстояние \(\bar{z_e}\) между трещинами должно быть сопоставимо со средней полудлиной \(\bar{x_f}\) трещин.</p>
+<p><strong>Важно:</strong> выяснить важно ли, что каждой вклад должен быть положительным?</p>
+<h3 id="газовая-скважина">Газовая скважина</h3>
+<p>// TODO : расписать по мере необходимости</p>
+<h3 id="калькулятор">Калькулятор</h3>
+  <script type="module" src="/js/guo2009_calculator.js" defer></script>
+  <script type="module" src="/js/guo2009_plotter.js"></script>
+$$
+\begin{array}l
+1 \; \text{атм} = 10^5 \; \text{Па} \\ \\ 
+10 \; \text{П} = 1 \; \text{Па} \cdot \text{с}  \;\;\; \text{или} \;\;\; 1 \; \text{сП} = 10^{-3} \; \text{Па} \cdot \text{с} \\ \\
+1 \; \text{Д} = 10^{-12} \; \text{м}^2
+\end{array}
+$$
+<h4 id="нефтяная-скважина-1">Нефтяная скважина.</h4>
+<table id="tableInput" border="1">
+    <tr>
+        <th>Параметр</th>
+        <th>Значение</th>
+    </tr>
+    <tr>
+        <td>Среднее давление пласта, атм</td>
+        <td><input type="number" id="press_res" min="1" value="100"></td>
+    </tr>
+    <tr>
+        <td>Высота пласта, м</td>
+        <td><input type="number" id="h_res" min="1" value="10"></td>
+    </tr>
+    <tr>
+        <td>Проницаемость пласта, Д</td>
+        <td><input type="number" id="k_res" min="0.001" step="0.001" value="1"></td>
+    </tr>
+    <tr>
+        <td>Давление на скважине, атм</td>
+        <td><input type="number" id="press_well" min="1" value="10"></td>
+    </tr>
+    <tr>
+        <td>Радиус скважины, см</td>
+        <td><input type="number" id="rad_well" min="1" value="8"></td>
+    </tr>
+    <tr>
+        <td>Вязкость жидкости, сП</td>
+        <td><input type="number" id="mu" min="0.001" step="0.001" value="1"></td>
+    </tr>
+    <tr>
+        <td>Количество трещин, шт</td>
+        <td><input type="number" id="frac_count" min="2" value="2"></td>
+    </tr>
+    <tr>
+        <td>Полудлина трещин, м</td>
+        <td><input type="text" id="frac_xfs" value="100, 100"></td>
+    </tr>
+    <tr>
+        <td>Координата (глубин) трещин, м</td>
+        <td><input type="text" id="frac_yfs" value="100, 200"></td>
+    </tr>
+    <tr>
+        <td>Ширина трещин, мм</td>
+        <td><input type="text" id="frac_ws" value="5, 5"></td>
+    </tr>
+    <tr>
+        <td>Проницаемость трещин, Д</td>
+        <td><input type="text" id="frac_kfs" value="1000, 1000"></td>
+    </tr>
+</table>
+<p><strong>Внимание:</strong> значения для трещин задаются через запятую. Например, полудлина трех трещин &ldquo;100, 200, 120&rdquo;.</p>
+<p><br><br>
+<input type="button" value="Вычислить" id="calculateButton">
+<input type="button" value="Нарисовать область" id="drawDomainButton">
+<br><br></p>
+<svg id="guoDomain" width="500" height="500" style="border:1px solid black;">
+</svg>
+<table id="tableOutput" border="1">
+  <tr>
+    <th>Параметр</th>
+    <th>Значение</th>
+  </tr>
+  <tr>
+    <td>Средняя полудлина трещин, м</td>
+    <td id="aver_xf_value"></td>
+  </tr>
+  <tr>
+    <td>Среднее полурасстояние между трещинами, м</td>
+    <td id="aver_ze_value"></td>
+  </tr>
+    <tr>
+    <td>\(r_L \;\),  м</td>
+    <td id="rl_value"></td>
+  </tr>
+    <tr>
+    <td>\(A = \pi \cdot r_L^2, \; \text{м}^2\)</td>
+    <td id="a_value"></td>
+  </tr>
+  <tr>
+    <td>\(w / h = \dfrac{n \bar{z_e}}{\bar{x_f}}\)</td>
+    <td id="ah_value"></td>
+  </tr>
+<tr>
+    <td>\(C_A\)</td>
+    <td id="CA_value"></td>
+  </tr>
+  <tr>
+    <td>\(F = \dfrac{4 \cdot A}{\gamma \cdot C_A \cdot r_L^2 }\)</td>
+    <td id="F_value"></td>
+  </tr>
+  <tr>
+    <td>\(\ln(F)\)</td>
+    <td id="lnF_value"></td>
+  </tr>
+    <tr>
+    <td>\(J_R, \;\; \text{м}^3 / (\text{Па} \cdot \text{с})\)</td>
+    <td id="j_big_r_value"></td>
+  </tr>
+    <tr>
+    <td>\(J_L\) coefficent = \(\dfrac{4 k_H h}{\mu}\)</td>
+    <td id="jl_cf_value"></td>
+  </tr>
+    <tr>
+    <td>\(J_L, \;\; \text{м}^3 / (\text{Па} \cdot \text{с})\)</td>
+    <td id="jl_value"></td>
+  </tr>
+    <!-- <tr>
+    <td>\(\ln(h/2r_w)\)</td>
+    <td id="lnhto2rw_value"></td>
+  </tr> -->
+    <tr>
+    <td>\(J_r , \;\; \text{м}^3 / (\text{Па} \cdot \text{с})\)</td>
+    <td id="j_small_r_value"></td>
+  </tr>
+    <tr>
+    <td>\(1 / J_R , \;\; (\text{Па} \cdot \text{с}) / \text{м}^3\)</td>
+    <td id="over_j_big_r_value"></td>
+  </tr>
+    <tr>
+    <td>\(1 / J_L , \;\; (\text{Па} \cdot \text{с}) / \text{м}^3\)</td>
+    <td id="over_jl_value"></td>
+  </tr>
+    <tr>
+    <td>\(1 / J_r , \;\; (\text{Па} \cdot \text{с}) / \text{м}^3\)</td>
+    <td id="over_j_small_r_value"></td>
+  </tr>
+    <tr>
+    <td>\(sum = 1 / J_R + 1 / J_L + 1 / J_r , \;\; (\text{Па} \cdot \text{с}) / \text{м}^3\) </td>
+    <td id="sum_value"></td>
+  </tr>
+    <tr>
+    <td>\(1/sum, \;\; \text{м}^3 / (\text{Па} \cdot \text{с})\)</td>
+    <td id="over_sum_value"></td>
+  </tr>
+    <tr>
+    <td>\(q, \;\; \text{м}^3/\text{с} \), </td>
+    <td id="q_sec_value"></td>
+  </tr>
+    <tr>
+    <td>\(q, \;\; \text{м}^3/\text{сут} \), </td>
+    <td id="q_day_value"></td>
+  </tr>
+</table>
+<!-- #### Контрольные вычисления
+
+Рассмотрим нефтяную горизонтальную скважину с тремя равномерно распределенными трещинами одинаковой длины МГРП. 
+Трещины вскрывают пласт от кровли до подошвы, то есть высота каждой трещины равна высоте пласта.
+
+<table border=1 frame=void rules=rows>
+    <thead>
+        <tr>
+            <th colspan="2">Таблица 1 -- Тестовые параметры пласта, скважины и трещин </th>
+        </tr>
+          <tr>
+            <th>Параметр</th><th>Значение</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Высота пласта</td><td>10 м</td>
+        </tr>
+        <tr> 
+            <td>Проницаемость пласта </td><td> \(10^{-12} \; \text{м}^2\) </td> 
+        </tr>
+        <tr> 
+            <td>Среднее давление пласта</td><td> \(10^6\) Па </td> 
+        </tr>
+        <tr> 
+            <td>Давление на скважине</td><td> \(10^5\) Па </td> 
+        </tr>
+        <tr> 
+            <td>Вязкость нефти </td><td> \(10^{-3}\) Па * с </td> 
+        </tr>
+        <tr> 
+            <td>Длина скважины </td><td> 1000 м </td> 
+        </tr>
+        <tr> 
+            <td>Радиус скважины </td><td> 0.1 м </td> 
+        </tr>
+        <tr> 
+            <td>Скин фактор </td><td> 0 </td> 
+        </tr>
+        <tr> 
+            <td>Длина трещин </td><td></td> 
+        </tr>
+        <tr> 
+            <td align="center"> Трещина1 </td><td> 400 м </td> 
+        </tr>
+        <tr> 
+            <td align="center"> Трещина2 </td><td> 600 м </td> 
+        </tr>
+        <tr> 
+            <td align="center"> Трещина3 </td><td> 500 м </td> 
+        </tr>
+        <tr> 
+            <td>Ширина трещины </td><td> \(10^{-3}\) м </td> 
+        </tr>
+        <tr> 
+            <td>Проницаемость трещины </td><td> \(10^{-5} \; м^2\) </td> 
+        </tr>
+        <tr> 
+            <td>Среднее расстояние м/у трещинами </td><td> 200 м </td> 
+        </tr>
+    </tbody>
+</table>
+
+
+Вычислим значения проводимостей \(J_R, J_L, J_r\) для значений из Таблицы 1. 
+
+- Количество трещин \(n = 3\).
+- Среднее полурасстояние между трещинами \($\bar{z_e} = 100$\) м.
+- Средняя полудлина трещин \($\bar{x_f}$ = 250\) м. -->
+<!-- 
+
+Тогда 
+
+$$
+\begin{array}l
+r_L = \sqrt{ \dfrac{4 \cdot 3 \cdot 100 [м] \cdot 250 [м]}{\pi}} = 309.02 \; м. \\ \\
+A = \pi \cdot r_L^2 = 3 \cdot 10^5  \; м^2 \\ \\
+ah = \dfrac{3 \cdot 100 [м]}{250 [м]} = 1.2 \\ \\
+C_A = 10 \\ \\ 
+\end{array}
+$$
+
+Поскольку все трещины имеют одинаковую проводимость и равномерно распеределены, тогда 
+$$
+c_i \equiv c_0 = \dfrac{24 \cdot 10^{-12} \; [м^2]}{100 \; [м] \cdot 10^{-3} \; [м] \cdot 10^{-5} \; [м^2]} = 2.4 \cdot 10^{-5} \; \dfrac{1}{[м^2]}
+$$
+
+Вычислим \(J_R\)
+$$
+\begin{array}l
+F \equiv  \dfrac{4 \cdot A}{\gamma C_A r_L^2} = \dfrac{4 \cdot 3 \cdot 10^5 [м^2]}{1.78 \cdot 10 \cdot 309.02^2 [м^2]} = 0.706 \\ \\
+lnF = - 0.35 \\ \\ 
+J_R = \dfrac{2 \cdot 3.14 \cdot 10^{-12} \; [м^2] \cdot 10 \; [м]}{10^{-3} \; [Па \cdot с] \cdot 0.5 \cdot (-0.35)} = -3.61 \cdot 10^{-6} \;
+\dfrac{[м^3]}{[Па \cdot с]}
+\end{array}
+$$
+
+Теперь \(J_L\)
+$$
+\begin{array}l
+1-e^{-\sqrt{c_i}x_{fi}} = 
+\begin{cases}
+    i=1: & 1-e^{-\sqrt{2.4 \cdot 10^{-5}} \dfrac{1}{[м]} \cdot 200 [м] } = 0.62 \\
+    i=2: & 1-e^{-\sqrt{2.4 \cdot 10^{-5}} \dfrac{1}{[м]} \cdot 300 [м] } = 0.77 \\
+    i=3: & 1-e^{-\sqrt{2.4 \cdot 10^{-5}} \dfrac{1}{[м]} \cdot 250 [м] } = 0.71 
+\end{cases}
+\end{array} 
+$$
+
+Так как в \(J_L\) из (5) коэффициент под суммой для каждой трещины одинаковый и равен 
+$$
+\dfrac{4 k_H h}{\mu \bar{z_{e}} \sqrt{c_0}} = \dfrac{ 4 \cdot 10^{-12}\;  [м^2] \cdot 10 \; [м]}{10^{-3} \; [Па \cdot с] \cdot 100 \; [м] \cdot \sqrt{2.4 \cdot 10^{-5}} \dfrac{1}{[м]} } = 8.16 \cdot 10^{-7} \; \dfrac{[м^3]}{[Па \cdot с]},
+$$
+тогда 
+
+$$
+\begin{array}l
+J_L = 8.16 \cdot 10^{-7} \; \dfrac{[м^3]}{[Па \cdot с]} \cdot (0.62 + 0.77 + 0.71)  =
+1.72 \cdot 10^{-6} \; \dfrac{[м^3]}{[Па \cdot с]}.
+\end{array} 
+$$
+
+**Теперь \(J_r\)**. 
+Будем считать, что течения не подчиняющегося закону Дарси нет, тогда \(D = 0\).
+Здесь, также как и для \(J_L\), коэффициент под суммой для всех трещин одинаковый и равен
+$$
+\dfrac{\pi k_f w}{6 \mu \left[\ln \left(\dfrac{h}{2r_w}\right) + \pi - 1.224\right]},
+$$
+
+тогда 
+
+$$
+\begin{array}l
+\ln\left(\dfrac{h}{2r_w}\right) = \ln\left(\dfrac{10 \; [м]}{2 \cdot 0.1 \; [м]}\right) = 3.91\\ \\ 
+J_r = 3 \cdot \dfrac{3.14 \cdot 10^{-8} \; [м^2] \cdot 10^{-3} \; [м]}{6 \cdot 10^{-3} \; [Па \cdot с] \left(3.91 + 3.14 - 1.224\right)}  =
+1.62 \cdot 10^{-4} \; \dfrac{[м^3]}{[Па \cdot с]}.
+\end{array} 
+$$
+
+Окончательно
+$$
+\begin{array}l
+\dfrac{1}{J_R} = \dfrac{1}{-3.61 \cdot 10^{-6}} = -2.77 \cdot 10^5 \; \dfrac{[Па \cdot с]}{[м^3]}\\ \\ 
+\dfrac{1}{J_L} = \dfrac{1}{1.72 \cdot 10^{-6}} = 5.83 \cdot 10^5 \; \dfrac{[Па \cdot с]}{[м^3]}\\ \\
+\dfrac{1}{J_r} = \dfrac{1}{1.62 \cdot 10^{-4}} = 6.19 \cdot 10^3 \; \dfrac{[Па \cdot с]}{[м^3]}\\ \\
+R = \dfrac{1}{J_R} + \dfrac{1}{J_R} + \dfrac{1}{J_R} = -2.77 \cdot 10^5 + 5.83 \cdot 10^5 + 6.19 \cdot 10^3  = 3.12 \cdot 10^5  \; \dfrac{[Па \cdot с]}{[м^3]} \\ \\
+\dfrac{1}{R}= \dfrac{1}{3.12 \cdot 10^5  \; \dfrac{[Па \cdot с]}{[м^3]}} = 3.2 \cdot 10^{-6} \dfrac{[м^3]}{[Па \cdot с]} \\ \\
+q = \dfrac{1}{R} \left(\bar{p} - p_w\right) = 3.2 \cdot 10^{-6} \dfrac{[м^3]}{[Па \cdot с]} \cdot \left(10^6 - 10^5\right) [Па] = 
+2.88 \; \dfrac{[м^3]}{[с]} = 249141.78 \; \dfrac{[м^3]}{[сут]}
+\end{array} 
+$$ -->
+<h4 id="анализ-модели">Анализ модели</h4>
+<p>Введем среднюю проводимость трещины
+</p>
+$$
+M = \dfrac{\bar{k_f} \cdot \bar{w}} {k_H \cdot r_c}
+$$
+<p>
+где \(r_c\) &ndash; некоторая константа.</p>
+<p>Обычно (тут ссылка на наши статьи) трещина считается бесконечно проводимой, если \(M > 10-100\).
+Начиная с данных значений, увеличение проводимости трещины перестает влиять на рост ее дебита.</p>
+<p>Давайте посмотрим на график \(q(k_f)\) или \(q(M)\).
+<figure><img src="/mshfhw/analytic_formulas/images/image_guo_2009_5.png"
+    alt="Рис. 4"><figcaption>
+      <p>Рис. 4</p>
+    </figcaption>
+</figure>
+</p>
+<!-- Построим карты \( q(k_f, \bar{x_f}) \) для различных \(n\) (см. рис. 5) -->
+<figure><img src="/mshfhw/analytic_formulas/images/image_guo_2009_4.png"
+    alt="Рис. 5"><figcaption>
+      <p>Рис. 5</p>
+    </figcaption>
+</figure>
+
+<p>Почему есть  области с отрицательными дебитами (закрашено серым)? Там становится отрицательным \(J_R\), потому что выполняется условие (6).</p>
+<h4 id="сравнение-с-численными-расчетами">Сравнение с численными расчетами.</h4>
+$$
+E = \dfrac{q_{3D} - q}{q_{3D}}
+$$
+<figure><img src="/mshfhw/analytic_formulas/images/image_guo_2009_6.png"
+    alt="Рис. 6"><figcaption>
+      <p>Рис. 6</p>
+    </figcaption>
+</figure>
+
+<!-- В нашем примере
+$$
+M = \dfrac{10 ^{-8} \cdot 10^{-3}}{10^{-12} \cdot 3 \cdot 10^2}
+$$ -->
+<h3 id="номенклатура">Номенклатура</h3>
+<ul>
+<li>\(A\) - зона дренирования скважины, м</li>
+<li>\(c\) &ndash; константа из формулы (3а), \(\text{м}^{-2}\)</li>
+<li>h &ndash; высота пласта, м</li>
+<li>i &ndash; индекс трещины</li>
+<li>\(J_L\) &ndash; индекс продуктивности линейного притока,</li>
+<li>\(J_r\) &ndash; индекс продуктивности радиального притока в трещине,</li>
+<li>\(J_R\) &ndash; индекс продуктивности линейного потока в пласте,</li>
+<li>\(k_f\) &ndash; проницаемость трещины, \(\text{м}^2\)</li>
+<li>\(k_H\) &ndash; проницаемость пласта, \(\text{м}^2\)</li>
+<li>\(\bar{p}\) &ndash; среднее давление пласта, Па</li>
+<li>\(p_w\) &ndash; давление на скважине, Па</li>
+<li>\(q\) &ndash; дебит, \(\text{м}^3/\text{c}\)</li>
+<li>\(r_L\) &ndash; радиус региона с линейный течением, м</li>
+<li>\(r_w\) &ndash; радиус скважины, м</li>
+<li>\(w\) &ndash; ширина раскрытия трещины, м</li>
+<li>\(x_f\) &ndash; полудлина трещины, м</li>
+<li>\(\gamma\) = 1.78, б.р</li>
+<li>\(\mu_o\) &ndash; вязкость нефти, Па * с</li>
+<li>\(s\) &ndash; скин-фактор скважины, б.р</li>
+<li>\(C_A\) &ndash; форм-фактор области дренирования скважины, б.р</li>
+<li>\(D\) &ndash; коэффициент течения, не подчиняющегося закону Дарси, \( \text{с} / \text{м}^3\)</li>
+</ul>
+<h3 id="список-литературы">Список литературы</h3>
+<ol>
+<li>Economides, M.J., McLennan, J.D., Brown, J.E., and Roegiers, J.-C.</li>
+<li>Performance and Stimulation of Horizontal Wells. World Oil (June): 41.</li>
+<li>Furui, K., Zhu, D., and Hill, A.D. 2003. A Rigorous Formation Damage Skin Factor and Reservoir Inflow Model for a Horizontal Well. SPE Res Eng 18 (3): 151–157. SPE-84964-PA. doi: 10.2118/84964-PA.</li>
+<li>Giger, F.M., Reiss, L.H., and Jourdan, A.P. 1984. The Reservoir Engineering Aspects of Horizontal Drilling. Paper SPE 13024 presented at the SPE Annual Technical and Exhibition, Houston, 16–19 September. doi: 10.2118/13024-MS.</li>
+<li>Guo, B. and Schechter, D.S. 1997. A Simple and Rigorous Mathematical Model for Estimating Inflow Performance of Wells Intersecting Long Fractures. Paper SPE 38104 presented at the SPE Asia Pacific Oil and Gas Conference and Exhibition, Kuala Lumpur, 14–16 April. doi:10.2118/38104-MS.</li>
+<li>Joshi, S.D. 1988. Augmentation of Well Productivity with Slant and
+Horizontal Wells. J. Pet Tech 40 (6): 729–739; Trans., AIME, 285.
+SPE-15375-PA. doi: 10.2118/15375-PA.</li>
+<li>Karcher, R.J, Giger, F.M., and Combe, J. 1986. Some Practical Formulas to Predict Horizontal Well Behavior. Paper SPE 15430 presented at the SPE Annual Technical Conference and Exhibition, New Orleans, 5–8 October. doi: 10.2118/15430-MS.</li>
+<li>Li, H., Jia, Z., and Wei, Z. 1996. A New Method to Predict Performance of Fractured Horizontal Wells. Paper SPE 37051 presented at the International Conference on Horizontal Well Technology, Calgary, 18–20 November. doi: 10.2118/37051-MS.</li>
+<li>Mukherjee, H. and Economides, M.J. 1991. A Parametric Comparison
+of Horizontal and Vertical Well Performance. SPE Form Eval 6 (2):
+209–216. SPE-18303-PA. doi: 10.2118/18303-PA.</li>
+<li>Prats, M. 1961. Effect of Vertical Fractures on Reservoir Behavior—Incompressible Fluid Case. SPE J. 1 (2): 105–118; Trans., AIME, 222. SPE-1575-G. doi: 10.2118/1575-G.</li>
+<li>Raghavan, R. and Joshi, S.D. 1993. Productivity of Multiple Drainholes or Fractured Horizontal Wells. SPE Form Eval 8 (1): 11–16. SPE-21263-PA. doi: 10.2118/21263-PA.</li>
+<li>Soliman, M.Y., Hunt, J.L., and El Rabaa, A.M. 1990. Fracturing Aspects of Horizontal Wells. J. Pet Tech 42 (8): 966–973. SPE-18542-PA. doi: 10.2118/18542-PA.</li>
+<li>Wan, J. and Aziz, K. 2002. Semi-Analytical Well Model of Horizontal wells with Multiple Hydraulics Fractures. SPE J. 7 (4): 437–445. SPE-81190-PA. doi: 10.2118/81190-PA.</li>
+<li>Wei, Y. and Economides, M.J. 2005. Transverse Hydraulic Fractures From a Horizontal Well. Paper SPE 94671 presented at the SPE Annual Technical Conference and Exhibition, Dallas, 9–12 October. doi: 10.2118/94671-MS.</li>
+</ol>
+<h3 id="вопросы-на-которые-нужно-найти-ответы">Вопросы, на которые нужно найти ответы</h3>
+<ol>
+<li>Почему с уменьшением значения среднего полурасстояния между трещинами, суммарный дебит трещин растет?</li>
+<li>Что означает отрицательный \(J_R\)?</li>
+</ol>
+</div></div><footer>
+    <hr>
+    <div class="footer-text">
+        <div>© 2024 База знаний</div>
+        <div>Powered by <a href="https://gohugo.io/">Hugo</a> & <a
+                href="https://github.com/adityatelange/hugo-index/">Index</a></div>
+    </div>
+</footer>
+</body>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+
+
+
+
+</html>

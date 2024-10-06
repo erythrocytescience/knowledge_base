@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Аналитическая Формула on База знаний</title>
+    <link>//localhost:1313/tags/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0/</link>
+    <description>Recent content in Аналитическая Формула on База знаний</description>
+    <generator>Hugo</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Sat, 20 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guo 1993. Inflow Performance of a Horizontal Well Intersecting Natural Fractures</title>
+      <link>//localhost:1313/mshfhw/analytic_formulas/compressible/guo_1993/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/mshfhw/analytic_formulas/compressible/guo_1993/</guid>
+      <description>Детали авторы: Genliang Guo and A.D. Evans Название: Inflow Performance of a Horizontal Well Intersecting Natural Fractures год: 1993 doi: Cсылка [!WARNING] УПРУГИЙ РЕЖИМ!!!&#xA;Аннотация Рассматриваются аналитические однофазная и многофазная псевдостационарные модели для определения продуктивности горизонтальной скважины (ГС) с трещинами (натуральными). Однофазная модель состоит из комбинации псевдостационарного течения к ГС в однородном пласте&#xA;и течения к трещине (в некоторой области). Учитываются эффекты от анизотропии проницаемости, расположения ствола ГС и характеристик трещин.</description>
+    </item>
+    <item>
+      <title>Guo 1997. A Simple and rigorous mathematical model for estimating inflow performance of wells intersecting long fractures</title>
+      <link>//localhost:1313/mshfhw/analytic_formulas/guo_1997/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/mshfhw/analytic_formulas/guo_1997/</guid>
+      <description>Аннотация В данной статье представлена простая и более строгая математическая модель для оценки продуктивности вертикальных и горизонтальных скважин, пересеченных трещинами, полностью вскрывающими участок пласта. Важной особенностью новой модели является то, что она позволяет строго сопрягать течение в пласте и в в трещинах. Распределение давление в трещинах последовательно используется и для течения в пласте, и для течения в трещине. Другой особенностью является то, что эту модель легко использовать, потому что уравнения, содержащиеся в ней, имеют простую форму.</description>
+    </item>
+    <item>
+      <title>Wei, Economides 2005. Transverse Hydraulic Fractures From a Horizontal Well</title>
+      <link>//localhost:1313/mshfhw/analytic_formulas/economides_2005/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/mshfhw/analytic_formulas/economides_2005/</guid>
+      <description>Детали авторы: Y. Wei and M.J. Economides, U. of Houston Название: Transverse Hydraulic Fractures From a Horizontal Well год: 2005 doi: Cсылка Аннотация ГС без МГРП экономически не привлекательные на месторождениях с вертикальными скважины с ГРП. Во многих местах такие скважины показали свою эффективность перед ГС. Поэтому надо на ГС тоже делать ГРП.&#xA;На глубинах залегания нефтяных пластов поле напряжение таково, что трещины получаются вертикальными и направленными по нормали к минимальному горизонтальному напряжению (?</description>
+    </item>
+    <item>
+      <title>A Parametric Comparison of Horizontal and Vertical Well Performance</title>
+      <link>//localhost:1313/mshfhw/analytic_formulas/economides_1991/</link>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/mshfhw/analytic_formulas/economides_1991/</guid>
+      <description>Детали Авторы: Hemanta Mukherjee, Michael J. Economides Название: A Parametric Comparison of Horizontal and Vertical Well Performance год: 1991 doi: Cсылка Рис. 1. Область решения задачи о притоке жидкости к горизонтальной скважине</description>
+    </item>
+    <item>
+      <title>Guo 2009. A Simple Analytical Model for Predicting Productivity of Multifractured Horizontal Wells</title>
+      <link>//localhost:1313/mshfhw/analytic_formulas/guo_2009/</link>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/mshfhw/analytic_formulas/guo_2009/</guid>
+      <description>Детали Авторы: Boyun Guo, Xiance Yu, Mohammad Khoshgahdam Название: A Simple Analytical Model for Predicting Productivity of Multifractured Horizontal Wells год: 2009 doi: Cсылка Обзор литературы, введение. Авторы утверждают, что нет простых и точных математических моделей для оценки дебита нефтяных горизонтальных скважин. Существующие аналитические модели не дают необходимой точности для расчета дебита. Модель состоит из радиального течения вне областей без трещин, линейный приток к берегам трещин в зоне трещин, линейной поток в трещинах и радиальный поток в трещинах к скважине.</description>
+    </item>
+    <item>
+      <title>Hujin Li 1996. A New Method to Predict Performance of Fractured Horizontal Wells</title>
+      <link>//localhost:1313/mshfhw/analytic_formulas/hujun_li_1996/</link>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/mshfhw/analytic_formulas/hujun_li_1996/</guid>
+      <description>Детали авторы: Hujun Li, Zhengqi Jia, and Zhaosheng Wei Название: A Simple Analytical Model for Predicting Productivity of Multifractured Horizontal Wells год: 1996 DOI: Cсылка Аннотация Когда нефтяные месторождения разрабатываются с помощью ГС, обычно необходимо проводить гидроразрыва для достижения экономической целесообразности. Отсюда возникает необходимость для прогнозирования продуктивности ГС с гидроразрывом. В данной статье представлен метод для оценки продуктивности ГС с гидроразрывом и с частичной перфорацией. Использую данную модель были изучены факторы, влияющие на продуктивности ГС с гидроразрывом.</description>
+    </item>
+    <item>
+      <title>Краткое описание аналитических формул оценки дебита ГС с МГРП</title>
+      <link>//localhost:1313/mshfhw/analytic_formulas/mshfhw_formulas_quick_description/</link>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/mshfhw/analytic_formulas/mshfhw_formulas_quick_description/</guid>
+      <description>Name Picture Description Formula Mukherjee, Economides (1991) Область решения: прямоугольный параллелепипед. Скважина находится в центре, трещины ортогональны оси скважины. Трещины бесконечной проницаемости. $$ \begin{array}l q_f = \dfrac{2 k_{H} \left(2 x_f h\right)\triangle p}{\mu B x} \\ x = \dfrac{L}{2\left(n-1\right)} \\ \triangle p = ??? \end{array} % \qquad(1) $$ Guo (2009) Область: окружность радиуса \(r_{L}\). \(\bar{z_e}\) -- половина среднего расстояния между трещинами $$ \begin{array}l q = \dfrac{1}{ \dfrac{1}{J_R} + \dfrac{1}{J_L} + \dfrac{1}{J_r} } \left(\bar{p} - p_w\right) \\ J_R = \dfrac{2 \pi k_H h}{\mu B \left(\dfrac{1}{2} \ln\left(\dfrac{4A}{\gamma C_A r_L^2}\right) \right)} \\ J_L = \sum_{i=1}^n \dfrac{4 k_H h}{\mu B z_{e_i} \sqrt{c_i}} \left(1 - e^{-\sqrt{c_i} x_{f_i}}\right)\\ J_r = \sum_{i=1}^n \dfrac{\pi k_{fwi} w_{wi}}{6 \mu B \left[\ln\left(\dfrac{h}{2r_{wi}}\right) + \pi - \left( 1.</description>
+    </item>
+  </channel>
+</rss>
