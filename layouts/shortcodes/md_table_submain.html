@@ -5,12 +5,39 @@
 {{ $table := "| №   | Ссылка |\n| --- | ------ |\n" }}
 {{ $lastIndex := 0 }}
 
-{{ range $index, $file := $files }}
+{{ range $file := $files }}
+  {{ if $file.IsDir}}
+    {{ $fp := printf "content/%s/%s" $folderPath $file.Name }}
+    {{ $subfiles := readDir $fp }}
+    {{ range $subfile := $subfiles}}
+      {{ if (in $subfile.Name ".md") }}
+        {{ $page := $.Site.GetPage (printf "%s/%s" $folderPath (printf "%s/%s" $file.Name (replace $subfile.Name ".md" ""))) }}
+        {{ if $page }} <!-- Check if the page exists -->
+          {{ $row := printf "| %d | [%s](%s) |\n" (add $lastIndex 1) $page.Title $page.RelPermalink }}
+          {{ $table = printf "%s%s" $table $row }}
+          {{ $lastIndex = add $lastIndex 1 }} <!-- Increment the index -->
+        {{ end }}
+      {{end}}
+      {{ if $subfile.IsDir}}
+        {{ $fp2 := printf "content/%s/%s/%s" $folderPath $file.Name $subfile.Name }}
+        {{ $subsubfiles := readDir $fp2 }}
+        {{ range $subsubfile := $subsubfiles}}
+          {{ if (in $subsubfile.Name ".md") }}
+          {{ $page := $.Site.GetPage (printf "%s/%s" $folderPath (printf "%s/%s" $file.Name (printf "%s/%s" $subfile.Name (replace $subsubfile.Name ".md" "")))) }}
+          {{ if $page }} <!-- Check if the page exists -->
+            {{ $row := printf "| %d | [%s](%s) |\n" (add $lastIndex 1) $page.Title $page.RelPermalink }}
+            {{ $table = printf "%s%s" $table $row }}
+            {{ $lastIndex = add $lastIndex 1 }} <!-- Increment the index -->
+          {{ end }}
+        {{end}}
+      {{end}}
+      {{end}}
+    {{end}}
+  {{ end }}
   {{ if and (not $file.IsDir) (in $file.Name ".md") }}
     {{ $page := $.Site.GetPage (printf "%s/%s" $folderPath (replace $file.Name ".md" "")) }}
-    {{ $row := printf "| %d | [%s](%s) |\n" (add $index 1) $page.Title $page.RelPermalink }}
+    {{ $row := printf "| %d | [%s](%s) |\n" (add $lastIndex 1) $page.Title $page.RelPermalink }}
     {{ $table = printf "%s%s" $table $row }}
-    {{ $lastIndex = add $index 1 }}
   {{ end }}
 {{ end }}
 
@@ -23,7 +50,7 @@
     {{ if ne $manualFile "" }}
       {{ $page := $.Site.GetPage (printf "%s" (replace $manualFile ".md" "")) }}
       {{ if $page }}
-        {{ $row := printf "| %d | [%s](%s) |\n" (add $lastIndex 1) $page.Title $page.RelPermalink }}
+        {{ $row := printf "| %d | [%s](%s) |\n" ($lastIndex) $page.Title $page.RelPermalink }}
         {{ $table = printf "%s%s" $table $row }}
         {{ $lastIndex = add $lastIndex 1 }}
       {{ else }}
