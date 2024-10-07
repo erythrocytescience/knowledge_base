@@ -38,6 +38,7 @@
     {{ $page := $.Site.GetPage (printf "%s/%s" $folderPath (replace $file.Name ".md" "")) }}
     {{ $row := printf "| %d | [%s](%s) |\n" (add $lastIndex 1) $page.Title $page.RelPermalink }}
     {{ $table = printf "%s%s" $table $row }}
+    {{ $lastIndex = add $lastIndex 1 }} <!-- Increment the index -->
   {{ end }}
 {{ end }}
 
