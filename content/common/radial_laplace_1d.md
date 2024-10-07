@@ -1,7 +1,7 @@
 ---
 title: 'Решение одномерного уравнения пьезопроводности в плоско-радиальной постановке'
 date: 2024-07-04
-tags: ["одномерная", "плоско-радиальная", "пьезопроводность", "давление"]
+tags: ["одномерная", "плоско-радиальная", "пьезопроводность", "давление", "однофазка"]
 math: true
 
 ---
@@ -9,7 +9,7 @@ math: true
 Рассмотрим уравнение 
 $$
 \begin{array}l
-\dfrac{1}{r}\dfrac{d}{dr} \left(r\dfrac{dp}{dr}\right) = 0, \;\; r_{w} \leq r \leq r_{c}; \\
+\dfrac{1}{r}\dfrac{d}{dr} \left(r\dfrac{dp}{dr}\right) = 0, \;\; r_{w} \leq r \leq r_{c}; \\ \\
 p(r_{w}) = p_{w}, \;\; p(r_{c}) = p_{c}
 \end{array}
 \qquad (1)
@@ -66,14 +66,16 @@ $$
 
 Тогда получим решение
 $$
+\displaystyle
 \begin{array}l
-p(r) = \dfrac{p_c -p_w}{\ln\left(\dfrac{r_c}{r_w} \right)}\ln(r) + \dfrac{p_{w}\cdot \ln(r_{c}) - p_{c} \cdot \ln(r_{w})}{\ln\left(\dfrac{r_c}{r_w} \right)} = \\
+p(r) = \dfrac{p_c -p_w}{\ln\left(\dfrac{r_c}{r_w} \right)}\ln(r) + \dfrac{p_{w}\cdot \ln(r_{c}) - p_{c} \cdot \ln(r_{w})}{\ln\left(\dfrac{r_c}{r_w} \right)} = \\ \\
 = \dfrac{p_c\ln\left(\dfrac{r}{r_w} \right) + p_w\ln\left(\dfrac{r_c}{r} \right)}{\ln\left(\dfrac{r_c}{r_w} \right)}
 \end{array}
 $$
 
 <div style="border: 3px solid red">
 $$
+\displaystyle
 \begin{array}l
 p(r) = \dfrac{p_c\ln\left(\dfrac{r}{r_w} \right) + p_w\ln\left(\dfrac{r_c}{r} \right)}{\ln\left(\dfrac{r_c}{r_w} \right)}
 \end{array}
