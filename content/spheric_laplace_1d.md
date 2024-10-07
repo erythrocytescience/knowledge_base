@@ -62,7 +62,7 @@ $$
 <div style="border: 3px solid red">
 $$
 \begin{array}l
-p(r) = ....
+p(r) = \dfrac{p_c \cdot r \cdot r_c + \left(\left(p_w-p_c\right)\cdot r_c - p_w \cdot r \right) \cdot r_w}{r \left( r_c - r_w\right)}
 \end{array}
 \qquad (4)
 $$
