@@ -1,7 +1,7 @@
 ---
 title: "Wei, Economides 2005. Transverse Hydraulic Fractures From a Horizontal Well"
 date: 2024-07-20
-tags: ["аналитическая формула", "Economides", "ГС", "МГРП", "оценка дебита", "статья"]
+tags: ["аналитическая формула", "Economides", "ГС", "МГРП", "оценка дебита", "обзор статьи"]
 language: 'ru-RU'
 math: true
 ---

@@ -5,4 +5,4 @@ tags: ["МГРП"]
 language: 'ru-Ru'
 ---
 
-{{< md_table_submain folder="mshfhw">}}
+{{< generate_links_from_folder folder="mshfhw">}}

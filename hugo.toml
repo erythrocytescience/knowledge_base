@@ -16,4 +16,7 @@ theme = 'index'
 [params]
   math = true
 
+[outputs]
+  home = ['html', 'rss', 'json']
+
 
