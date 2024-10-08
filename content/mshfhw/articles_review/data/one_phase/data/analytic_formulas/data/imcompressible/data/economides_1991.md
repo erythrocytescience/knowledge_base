@@ -1,7 +1,7 @@
 ---
 title: "Mukherjee, Economides (1991). A Parametric Comparison of Horizontal and Vertical Well Performance"
 date: 2024-07-12
-tags: ["аналитическая формула", "Economides", "ГС", "МГРП"]
+tags: ["аналитическая формула", "Economides", "ГС", "МГРП", "обзор статьи"]
 # language: 'ru-Ru'
 math: true
 ---

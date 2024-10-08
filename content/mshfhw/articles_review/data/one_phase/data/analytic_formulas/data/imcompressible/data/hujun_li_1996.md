@@ -1,8 +1,8 @@
 ---
 title: "Hujin Li 1996. A New Method to Predict Performance of Fractured Horizontal Wells"
 date: 2024-07-12
-tags: ["аналитическая формула", "Hujin Li", "ГС", "МГРП", "оценка дебита"]
-# language: 'ru-Ru'
+tags: ["аналитическая формула", "Hujin Li", "ГС", "МГРП", "оценка дебита", "обзор статьи"]
+language: 'ru-Ru'
 math: true
 ---
 
