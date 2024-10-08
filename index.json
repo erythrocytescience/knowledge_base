@@ -1,0 +1,10 @@
+{{ $scratch := newScratch }}
+{{- $scratch.Add "index" slice -}}
+{{- range site.RegularPages -}}
+    {{- $tags := slice -}}
+    {{- range (.GetTerms "tags") }}
+        {{- $tags = $tags | append (dict "title" .LinkTitle "permalink" .RelPermalink) }}
+    {{- end }}
+    {{- $scratch.Add "index" (dict "title" .Title "tags" $tags "description" .Description "permalink" .RelPermalink) -}}
+{{- end -}}
+{{- $scratch.Get "index" | jsonify -}}

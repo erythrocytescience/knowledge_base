@@ -1,0 +1,14 @@
+{{ $folderPath := .Get "folder" }}
+{{ $files := readDir (printf "content/%s" $folderPath ) }}
+
+<ul>
+{{ range $file := $files }}
+    {{ if $file.IsDir}}        
+        {{ $mainFile := printf "%s/%s/main.md" $folderPath $file.Name }}                
+        {{ if (fileExists $mainFile) }}
+            {{ $page := $.Site.GetPage (printf "%s" $mainFile) }}
+            <li><a href="{{ $page.RelPermalink }}">{{ $page.Title | default $page.RelPermalink }}</a></li>
+        {{ end }}
+    {{end}}
+{{end}}
+</ul>
