@@ -17,4 +17,4 @@ math: true
 </dl>
 </details>
 
-{{< figure src="/mshfhw/analytic_formulas/images/image_economides_1991_1.png" caption="Рис. 1. Область решения задачи о притоке жидкости к горизонтальной скважине" >}}
+{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/data/imcompressible/data/images/image_economides_1991_1.png" caption="Рис. 1. Область решения задачи о притоке жидкости к горизонтальной скважине" >}}

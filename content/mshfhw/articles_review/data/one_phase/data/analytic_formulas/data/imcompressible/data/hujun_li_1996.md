@@ -29,11 +29,11 @@ math: true
 1. ГС с МГРП: предполагается два течения: от контура дренирования в трещины, из трещин в ГС. все течение может быть 
 поделено на \(N\) регионов вдоль ствола ГС, каждый из которых содержит в центре себя трещину (рис. 1).
 
-{{< figure src="/mshfhw/analytic_formulas/images/image_hujin_li_1996_1.png" caption="Рис. 1. " >}}
+{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/data/imcompressible/data/images/image_hujin_li_1996_1.png" caption="Рис. 1. " >}}
 
 2. ГС с МГРП и ГС перфорирована, тогда течения будут из пласта в трещину и далее в скважина и из пласта непосредственно в скважину. все течение может быть поделено на \(N\) регионов вдоль ствола ГС, каждый из которых содержит в центре себя трещину и участок ствола ГС (рис. 2).
 
-{{< figure src="/mshfhw/analytic_formulas/images/image_hujin_li_1996_2.png" caption="Рис. 2. " >}}
+{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/data/imcompressible/data/images/image_hujin_li_1996_2.png" caption="Рис. 2. " >}}
 
 #### Математическая модель
 
@@ -193,7 +193,7 @@ $$
 
 ### Мои расчеты
  
-{{< figure src="/mshfhw/analytic_formulas/images/image_hujin_li_1996_3.png" caption="Рис. 3. " >}}
+{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/data/imcompressible/data/images/image_hujin_li_1996_3.png" caption="Рис. 3. " >}}
 
 ### Номенклатура
 - \(L^*\) -- расстояние от внешней границы дренирования до ствола ГС, м

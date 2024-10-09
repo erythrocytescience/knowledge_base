@@ -18,7 +18,7 @@ math: true
   <tbody>
     <tr>
       <td><a href ="../economides_1991">Mukherjee, Economides (1991)</a></td>
-      <td>{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/images/image_economides_1991_1.png">}}</td>
+      <td>{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/data/imcompressible/data/images/image_economides_1991_1.png">}}</td>
       <td>
         Область решения: прямоугольный параллелепипед. Скважина находится в центре, трещины ортогональны оси скважины. Трещины бесконечной проницаемости. 
       </td>
@@ -36,7 +36,7 @@ math: true
     </tr>
     <tr>
       <td><a href ="../guo_2009">Guo (2009)</a></td>
-      <td>{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/images/image_guo_2009_1.png">}}</td>
+      <td>{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/data/imcompressible/data/images/image_guo_2009_1.png">}}</td>
       <td>
         Область: окружность радиуса \(r_{L}\).
         \(\bar{z_e}\) -- половина среднего расстояния между трещинами
@@ -58,7 +58,7 @@ math: true
     </tr>
     <tr>
       <td><a href ="../hujun_li_1996">Hujun, Li (1996)</a></td>
-      <td>{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/images/image_hujin_li_1996_1.png">}}</td>
+      <td>{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/data/imcompressible/data/images/image_hujin_li_1996_1.png">}}</td>
       <td>
       Описание
       </td>
@@ -82,7 +82,7 @@ math: true
 #### <a href ="../economides_1991">Mukherjee, Economides (1991)</a>
 
 <center>
-{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/images/image_economides_1991_1.png" caption="Рис.1 " width="300" >}}
+{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/data/imcompressible/data/images/image_economides_1991_1.png" caption="Рис.1 " width="300" >}}
 </center>
 
 Скважина находится в центре, трещины ортогональны оси скважины. 
@@ -99,7 +99,7 @@ $$
 
 #### <a href ="../hujun_li_1996">Hujun, Li (1996)</a>
 
-<center>{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/images/image_hujin_li_1996_1.png"  caption="Рис.2 " width="300">}}</center>
+<center>{{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/data/imcompressible/data/images/image_hujin_li_1996_1.png"  caption="Рис.2 " width="300">}}</center>
 
 $$
   \begin{array}l
@@ -115,7 +115,7 @@ $$
 
 #### <a href ="../guo_2009">Guo (2009)</a>
 
-<center> {{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/images/image_guo_2009_1.png" caption="Рис.3 " width="300">}} </center>
+<center> {{< figure src="/mshfhw/articles_review/data/one_phase/data/analytic_formulas/data/imcompressible/data/images/image_guo_2009_1.png" caption="Рис.3 " width="300">}} </center>
 
 Область: окружность радиуса \(r_{L}\).         
 
