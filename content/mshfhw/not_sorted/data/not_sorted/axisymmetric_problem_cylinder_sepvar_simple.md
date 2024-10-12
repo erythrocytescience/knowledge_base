@@ -157,7 +157,35 @@ $$
 $$
 p(r,z) = R_0 Z_0 +  \sum_{n=1}^{\infty}\left[C_n I_0\left(\sqrt{\lambda_n}r\right)+D_n K_0\left(\sqrt{\lambda_n}r\right) \right]
 \cos \left( \sqrt{\lambda_n}z\right), \;\;\; \lambda_n = \dfrac{\pi^2\left(2n-1\right)^2}{4d^2}
+\qquad(18)
 $$
+
+## Численное решение 
+
+Численное решение задачи (18) в Maxima.
+
+
+
+## Численное решение задачи в MRST
+
+Рис.2 получен при следующих параметрах
+\(N_x = 101, N_y= N_x, N_z = 20\)
+
+\(d = 0.1, r_w = 10^{-3}, r_f = 0.2\)
+
+
+{{< figure src="/mshfhw/not_sorted/data/not_sorted/images/axisym_cylinder_press1.png" caption="Рис. 2. Распределение давления" >}}
+
+Рис. 3 получен при следующих параметрах
+
+\(N_x = 80, N_y= 70, N_z = 40\)
+
+\(r_w = 10^{-3}\)
+
+\(rfs = linspace(0.1, 0.5, 5); \;\;\; ds =  linspace(0.1, 2.0, 5);\)
+
+{{< figure src="/mshfhw/not_sorted/data/not_sorted/images/axisym_cylinder_maps1.png" caption="Рис. 3. Дебит" >}}
+
 
 
 
