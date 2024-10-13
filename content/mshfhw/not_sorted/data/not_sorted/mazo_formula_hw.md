@@ -10,7 +10,7 @@ math: true
 <div style="text-align: justify;">
 
 <!-- ![Область решения задачи о притоке жидкости к горизонтальной скважине](mazo_formula_hw_domain.jpg) -->
-{{< figure src="/images/mazo_formula_hw_domain.png" caption="Рис. 1. Область решения задачи о притоке жидкости к горизонтальной скважине" >}}
+{{< figure src="/mshfhw/not_sorted/data/not_sorted/images/mazo_formula_hw_domain.png" caption="Рис. 1. Область решения задачи о притоке жидкости к горизонтальной скважине" >}}
 
 
 <p>
@@ -108,7 +108,7 @@ $$
 концов ствола скважины, для которых характерным является приток из внешней
 полусферы (см. рис. 2).
 
-{{< figure src="/images/mazo_formula_hw_domain_edge.png" caption="Рис. 2. Схема концевого участка горизонтальной скважины" >}}
+{{< figure src="/mshfhw/not_sorted/data/not_sorted/images/mazo_formula_hw_domain_edge.png" caption="Рис. 2. Схема концевого участка горизонтальной скважины" >}}
 
 В области, ограниченной двумя полусферами радиусов \(r_w\) и \(H\), характер
 течения подчиняется сферической симметрии и описывается уравнениями
@@ -175,7 +175,7 @@ $$
 плоскостями, одна из которых проходит посредине трещины ГРП, а другая отстоит от нее на 
 расстоянии \(d\) и проходит посредине между трещинами (см. рис. 3).
 
-{{< figure src="/images/mazo_formula_mshfhw_domain.png" caption="Рис. 3.  Область решения задачи о притоке жидкости к горизонтальной скважине с трансверсальной трещиной ГРП" >}}
+{{< figure src="/mshfhw/not_sorted/data/not_sorted/images/mazo_formula_mshfhw_domain.png" caption="Рис. 3.  Область решения задачи о притоке жидкости к горизонтальной скважине с трансверсальной трещиной ГРП" >}}
 
 Трехмерная задача для давления \(p\) в коллекторе \(D\) для однородного пласта с учетом плоской симметрии имеет вид
 $$
@@ -308,7 +308,7 @@ p_{\Gamma} = \dfrac{Q - Q_{\gamma}}{\theta_f \left(I_d - I_1\right)}
 \qquad(2.14)
 $$
 
-{{< figure src="/images/mazo_formula_hw_q_qgamma_explain.png" caption="Рис. 4. Схема притока к скважине с МГРП" >}}
+{{< figure src="/mshfhw/not_sorted/data/not_sorted/images/mazo_formula_hw_q_qgamma_explain.png" caption="Рис. 4. Схема притока к скважине с МГРП" >}}
 
 
 Так \(Q\) с учетом (1.4) и (1.10) будет  (см. рис. 4)
