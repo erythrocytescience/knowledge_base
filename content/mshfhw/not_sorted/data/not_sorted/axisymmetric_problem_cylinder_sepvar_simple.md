@@ -164,6 +164,55 @@ $$
 
 Численное решение задачи (18) в Maxima.
 
+<details>
+<summary>Исходный код в Maxima</summary>
+
+```python
+/* Load necessary package */
+load(draw)$
+
+/* Define constants */
+p_r : 1$ /* Example value, adjust as needed */
+r_w : 0.5$ /* Example well radius */
+r_f : 2$ /* Example fracture radius */
+d : 1$ /* Height in the z-direction */
+terms : 10$ /* Number of terms for the summation */
+
+/* Define functions */
+R0(r) := p_r * log(r / r_w) / log(r_f / r_w)$
+Z0(z) := 1$
+
+lambda_n(n) := (2 * n - 1)^2 * %pi^2 / (4 * d^2)$
+
+I0(x) := bessel_i(0, x)$
+K0(x) := bessel_k(0, x)$
+
+/* Coefficients */
+C_n(n) := -p_r * K0(sqrt(lambda_n(n)) * r_w) / G_n(n)$
+D_n(n) := p_r * I0(sqrt(lambda_n(n)) * r_w) / G_n(n)$
+
+G_n(n) := I0(sqrt(lambda_n(n)) * r_w) * K0(sqrt(lambda_n(n)) * r_f)
+          - K0(sqrt(lambda_n(n)) * r_w) * I0(sqrt(lambda_n(n)) * r_f)$
+
+/* Define pressure function p(r, z) */
+p_rz(r, z) := R0(r) * Z0(z)
+            + sum( (C_n(n) * I0(sqrt(lambda_n(n)) * r)
+            + D_n(n) * K0(sqrt(lambda_n(n)) * r)) * cos(sqrt(lambda_n(n)) * z), n, 1, terms )$
+
+/* Plot the solution */
+draw3d(
+    explicit(p_rz(r, z), r, r_w, r_f, z, 0, d),
+    surface_hide = true,
+    color = green,
+    xlabel = "r",
+    ylabel = "z",
+    zlabel = "p(r, z)",
+    title = "Pressure distribution p(r, z)"
+)$
+```
+</details>
+
+{{< figure src="/mshfhw/not_sorted/data/not_sorted/images/axisym_cylinder_maxima.png" caption="Рис. 2. Распределение давления" >}}
 
 
 ## Численное решение задачи в MRST
