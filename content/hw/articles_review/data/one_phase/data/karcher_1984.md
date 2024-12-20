@@ -125,11 +125,34 @@ caption="Рис. 1. Бесконечный пласт, содержащий ГС
 
 
 ### References
-1. Reiss, L.H., Jourdan, A.P., Giger, F.M. and Armeasen, P.A. : “Off onshore European horizontal wells,” paper OTC 4791. Presented at the 1984 Offehore Technology Conference, Houston.
-2. Borisov, Ju. P. : Exploitation des Giaementa de p6trole par des puita horizontaux et & d~viations multiples, Nedra, Moscow (1964). .— Translation from Ruaaian to French: Institut FranGais du P6trole, Rueil 28363.
-3. Merkuiov, V.F. : Le debit des puits devies et horizontaux,” Neft. Khoz (1958) 6,51-56.
-4. Giger, F. : "Reduction du nombre de puita par l’utilisation de forages norizontauxn, Revue de l’lnstitut Fran~ais du P4trole,
-vol 38, N03 (May-3une 1983)*.
-5. Muskat, M. : The flow of homogeneous fluids through porous media, I.H.R.D.C. Boston, 1982
-7. Sobocinski, D.P., Cornelius, A.J. :"A correlation for predicting water coning time," Trans., AIME (1965).
-8. Kidder, R.E. : "Flow of immiscible fluids in porous media: exact  solution of a free of Applied boundary problem," Journal Physics, Ang. (1956), 27.
+1. Dore, M.: "Horizontal Drilling Methods Proven in Three Test Wells," World Oil (May 1983).
+2. Yager, D., "Esso Drills World's Longest Hori- zontal Well" The Roughneck, January 1985.
+3. Jourdan, A.P., Reiss, L.H., Joly, E., "Hori- zontal Wells the Worlwide State-of-the-art, as of 1986". Presented at the SPE International Meeting on Petroleum Engineering, Beijing, China, 17-20 March, 1986. SPE 14067.
+4. Reiss, L.H., Jourdan, A.P., Giger, F.M. and Arnessen, P.A. "Off onshore European hori- zontal wells," paper OTC 4791. Presented at the 1984 Offshore Technology Conference, Houston.
+5. Striegler, J.: "ARCO Finishes Fourth Horizontal Drainhole," Oil and Gas Journal (May 24, 1982).
+6. Hyland, C.R.: "Drain Hole Drilling
+An Idea Whose Time is Now," paper SPE 12792 presented at the SPE 1984 California Regional Meeting, Long Beach, March 25-26, 1984.
+7. Perrine, R.L.: "Well Productivity Increase from Drain Holes as Measured by Model Studies," Trans., AIME (1955) 204, 30-34.
+8. Roemershauser, A.E. and Hawkins, M.F.: "The effect of Slant Hole, Drainhole, and Lateral Hole Drilling on Well Productivity," J. Pet. Tech. (Feb. 1955) 11-14.
+9. Landrum, B.L. and Crawford, P.B.: "Effect of Drainhole Drilling on Production Capacity," Trans., AINE (1955) 204, 271-273.
+10. Muskat, M.: The Flow of Homogeneous Fluids Through Porous Media, J.W. Edwards, Inc., Ann Arbor, Mich. (1946) 273.
+11. Borisov, Ju. P.: "Exploitation des gisements de pétrole par des puits horizontaux et à dévia- tions multiples," Nedra, Moscow (1964), Trans- lation from Russian to French : Institut français du Pétrole, Rueil 28363.
+12. Merkulov, V.P.: "Le débit des puits déviés et horizontaux," Neft. Khoz (1958) 6, 51-56 (in Russian).
+13. Giger, F.: "Réduction du nombre de puits par l'utilisation de forages horizontaux", Revue de 1'Institut Français du Pétrole, vol 38, N° 3 (May-June 1983) (in French).
+14. Giger, F.: "Horizontal wells productions techniques in heterogeneous reservoirs", paper SPE 13710 presented at the 1985 SPE Middle East Meeting, Bahrain, March 11-14, 1985.
+15. Pyckhacev, G.B., "Underground Hydraulics", Moscow, 1961, 260-264 (in Russian).
+16. Daviau, F., Bourdarot, G., Mouronval, G., Curutchet, P.: "Pressure Analysis for Horizon- tal Wells". SPE 14251 presented at SPE Annual Technical Conference and Exhibition, Las Vegas, Nevada, September 22-25, 1985..
+17. Clonts, M.D, Ramey, H.J. Jr: "Pressure tran- sient analysis for wells with horizontal drainholes", paper SPE 15116 presented at the 1986 SPE California Regional Meeting, Oakland, April 2-4, 1986.
+18. Earlougher, R.C. Jr: "Advances in well test analysis", SPE Monograph Series, Dallas, 1977, 5.
+19. Muskat, M.: "The performance of Bottom water drive Reservoirs", Trans. AIME, 1947, 70,
+81-111.
+20. Chiericci, G.L., Giucci, G.M., Pizzi, G.: "A systematic study of gas and water coning by potentiometric models", J.P.T., Aug. 1964, 923929.
+21. Sobocinsky, D.P., Cornelius, A.J.: "a correla- tion for predicting water coning time", J.P.T., May 1965, 594.
+22. Hutchinson, T.S., Kemp, C.E.: "An extended analysis of bottom water drive reservoir performance", Trans. AIME, 207, 1956, 256-261.
+23. Kidder, R.E.: "Flow of immiscible fluids in porous media : exact solution of a freee boundary problem," Journal of Applied Physics, Ang. (1956), 27.
+24. Efros, D.A.: "Study of multiphase flows in porous media, Gastoptexizdat, Leningrad, 1963 (in Russian).
+25. Giger, F.: "Evaluation théorique de l'effet d'arête d'eau sur la production par puits horizontaux," Revue de l'Institut Français du Pétrole, Vol. 38, N° 3, (May-June 1983) (in French).
+26. Giger, F.: "Analytical 2-D models of water cresting before breakthrough for horizontal wells" paper SPE n° 15378, to be presented at 61st SPE annual Meeting, New Orleans, Oct. 5-8, 1986.
+27. Chaperon, I.: "Theoretical study of water oil gas coning towards vertical and horizontal wells subcritical and critical rates" paper SPE n°15377 to be presented at 61st SPE annual Meeting, New Orleans, Oct. 5-8, 1986.
+28. Crawford, P.B., Collins, R.E.: "Estimated Effect of Vertical Fractures on Secondary Recovery" Trans. AIME, V. 201, 1954, 192-196.
+29. Muskat, M., Wyckoff, R.D.: "A Theoretical Analysis of Water-Flooding Networks" trans. AIME, V. 107, 1934, 62-76.
