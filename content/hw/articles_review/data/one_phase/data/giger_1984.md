@@ -1,7 +1,7 @@
 ---
 title: "Giger, F.M., Reiss, L.H., and Jourdan, A.P. 1984. The Reservoir Engineering Aspects of Horizontal Drilling"
 date: 2024-12-20
-tags: ["аналитическая формула", "Giger", "ГС", "МГРП", "оценка дебита", "обзор статьи"]
+tags: ["аналитическая формула", "Giger", "ГС", "трещины", "оценка дебита", "обзор статьи"]
 language: 'ru-Ru'
 math: true
 ---
