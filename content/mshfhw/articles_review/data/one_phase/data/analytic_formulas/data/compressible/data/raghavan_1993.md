@@ -1,6 +1,6 @@
 ---
 title: "Rajagopal Raghavan, Sada D. Joshi 1993. Productivity of Multiple Drainholes or Fractured Horizontal Wells"
-date: 2024-07-20
+date: 2024-12-20
 tags: ["аналитическая формула", "Raghavan", "Joshi", "ГС", "МГРП", "оценка дебита", "упругий режим", "обзор статьи"]
 # language: 'ru-Ru'
 math: true
