@@ -1,6 +1,6 @@
 ---
 title: "Wan, J., Aziz, K. (2002). Semi-Analytical Well Model of Horizontal Wells With Multiple Hydraulic Fractures"
-date: 2024-07-20
+date: 2024-12-20
 tags: ["аналитическая формула", "Wan", "Aziz", "ГС", "МГРП", "оценка дебита", "упругий режим", "обзор статьи"]
 # language: 'ru-Ru'
 math: true
