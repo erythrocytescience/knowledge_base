@@ -8,7 +8,8 @@
 <body>
     {{- partial "header.html" . -}}
     <div class="main">{{- block "main" . }}{{- end }}</div>
-    {{- partial "footer.html" . -}}
+    <!-- {{- partial "footer.html" . -}} -->
+     {{- partial "my_footer.html" . -}}
 </body>
 {{ if .Param "math" }}
 {{ partialCached "math.html" . }}
