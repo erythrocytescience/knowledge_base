@@ -5,4 +5,4 @@ language: 'ru-Ru'
 tags: ["математика, численный анализ"]
 ---
 
-{{< generate_links_from_folder folder="maths/numerical/data">}}
+{{< md_table_submain folder="maths/numerical/data">}}
