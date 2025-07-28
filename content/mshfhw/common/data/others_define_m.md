@@ -1,5 +1,5 @@
 ---
-title: "Как другие авторы определяют M ($C_fd$)"
+title: "Как другие авторы определяют безразмерную проводимость трещины"
 date: 2025-07-28
 tags: ["проводимость трещины", "M", "Cfd", "трещина", "ГРП"]
 math: true
@@ -7,13 +7,13 @@ math: true
 ---
 
 ### Номенклатура
-- **M (C<sub>fd</sub>, F<sub>CD</sub>)** -- Fracture conductivity (dimensionless)
-- **k<sub>f</sub>** -- Fracture permeability (mD)  
-- **w** -- Fracture width (m)  
-- **k** -- Matrix permeability (md)  
-- **x<sub>f</sub>** -- Fracture half-length (m)  
-- **H** -- Reservoir half-width (m)
-- **r<sub>c</sub>** -- Reservoir radius (m)
+- **M (C<sub>fd</sub>, F<sub>CD</sub>)** -- Проводимость трещины (б/р)
+- **k<sub>f</sub>** -- Проницаемость трещины (мД)
+- **w** -- Ширина раскрытия трещины (м)
+- **k** -- Проницаемость пласта (мД)
+- **x<sub>f</sub>** -- Полудлина трещины (м)
+- **H** -- Высота пласта (м)
+- **r<sub>c</sub>** -- Радиус контура питания (м)
 
 
 ### Таблица с формулами
