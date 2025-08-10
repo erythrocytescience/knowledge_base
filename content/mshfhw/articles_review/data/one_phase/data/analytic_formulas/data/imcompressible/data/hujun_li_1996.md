@@ -183,6 +183,45 @@ $$
 
 ##### ГС с \(n\) вертикальными трещинами и частично перфорированная
 
+Вся область делится на \(n\) сегментов, в центре каждой из которых находится одна трещина.
+
+Тогда дебит ГС с МГРП с учетом перфорации ствола будет вычисляться по формуле
+$$
+\triangle p = p_r - p_w = Q_i \left(R_1 + R_2 + R_3\right),  \\
+R_1 = \dfrac{\mu}{2}
+\left[
+    \dfrac{1}{k h x_f \left(\dfrac{1}{L_{f_1}} + \dfrac{1}{L_{f_2}}\right)} + 
+    \dfrac{1}{k_fw} \left[\dfrac{x_f}{h} - \dfrac{1}{2} + \dfrac{1}{\pi} \ln{\left(\dfrac{h}{2r_w}\right)}\right]
+\right], \\[10pt]
+R_2 = \dfrac{\mu}{2} 
+\left[
+    \dfrac{1}{k L_d \left(L_{f_1} + L_{f_2}\right)}
+    \left[
+        \dfrac{x_f}{h} - \dfrac{1}{2} + \dfrac{1}{\pi}\ln{\left(\dfrac{h}{2r_w}\right)}
+    \right]
+\right], \\[10pt]
+R_3 = \dfrac{\mu}{2} 
+\left[
+    \dfrac{r_c - x_f}{kh \left(L_{f_1} + L_{f_2}\right)}
+\right],
+\qquad(8)
+$$
+где \(L_d = \dfrac{L_p}{L}\) -- степень перфорации скважины, \(L_p\)--длина перфорированная участка, \(L\) -- длина скважины
+
+Тогда дебит
+$$
+Q = \dfrac{2 \pi k h \left(p_r - p_w \right) }{\mu}
+\dfrac{1}{\left[
+a + b + c + d
+\right]}, \\[10pt]
+a = \dfrac{\pi}{x_f \left(\dfrac{1}{L_{f_1}} + \dfrac{1}{L_{f_2}}\right)}, \;\;\;
+b = \dfrac{\pi k h}{k_f w} \cdot g, \;\;\;
+c = \dfrac{\pi h}{L_d \left(L_{f_1} + L_{f_2}\right)} \cdot g, \\[10pt]
+d = \dfrac{\pi \left(r_c - x_f\right)}{\left(L_{f_1} + L_{f_2}\right)}, \;\;\;
+g = \dfrac{x_f}{h} - \dfrac{1}{2} + \dfrac{1}{\pi}\ln{\left(\dfrac{h}{2r_w}\right)}.
+\qquad(9)
+$$
+
 ### Факторный анализ и примеры
 
 #### Пример 1
