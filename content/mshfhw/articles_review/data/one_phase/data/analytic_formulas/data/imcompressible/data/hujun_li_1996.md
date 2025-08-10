@@ -208,9 +208,9 @@ R_3 = \dfrac{\mu}{2}
 $$
 где \(L_d = \dfrac{L_p}{L}\) -- степень перфорации скважины, \(L_p\)--длина перфорированная участка, \(L\) -- длина скважины
 
-Тогда дебит
+Тогда дебит \(i\)-ой трещины
 $$
-Q = \dfrac{2 \pi k h \left(p_r - p_w \right) }{\mu}
+Q_i = \dfrac{2 \pi k h \left(p_r - p_w \right) }{\mu}
 \dfrac{1}{\left[
 a + b + c + d
 \right]}, \\[10pt]
@@ -221,6 +221,9 @@ d = \dfrac{\pi \left(r_c - x_f\right)}{\left(L_{f_1} + L_{f_2}\right)}, \;\;\;
 g = \dfrac{x_f}{h} - \dfrac{1}{2} + \dfrac{1}{\pi}\ln{\left(\dfrac{h}{2r_w}\right)}.
 \qquad(9)
 $$
+
+Общий дебит скважины вычисляется по формуле (7).
+
 
 ### Факторный анализ и примеры
 
@@ -237,6 +240,10 @@ $$
 ### Номенклатура
 - \(L^*\) -- расстояние от внешней границы дренирования до ствола ГС, м
 - \(n\) -- количество трещин, б.р.
+- \(L_p\)--длина перфорированная участка, м
+- \(L\) -- длина скважины, м
+- \(k_f\) -- проницаемость \(i\)-ой трещины, м2
+
 
 ### References
 1. Joshi, S.D.: "A Review of Horizontal Well and Drainhole Technology," paper SPE 16868 presented at the 62nd Annual Techni- cal Conference and Exhibition of the Society of Petroleum Engi- neer held in Dallas, TX, October 27-30, 1987.
